@@ -1,0 +1,17 @@
+generated: '2026-07-18'
+method: searched
+probe: true
+source: https://duplocloud.com/security
+url: https://duplocloud.com/security
+certifications:
+- SOC 2
+- ISO 27001
+- PCI DSS
+- HIPAA
+evidence:
+- source: https://duplocloud.com/security
+  keywords:
+  - soc 2
+  - soc2
+  - pci-dss
+  - hipaa

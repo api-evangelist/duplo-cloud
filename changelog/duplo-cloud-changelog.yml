@@ -1,0 +1,12 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.duplocloud.com/docs/product-updates.md
+docs: https://docs.duplocloud.com/docs/product-updates
+scheme: dated-product-updates
+current_version: null
+entries: []
+notes: >-
+  DuploCloud publishes a dated "Product Updates" page in its documentation as the
+  canonical changelog. Individual dated entries were not harvested verbatim in this
+  pass; the live page is the source of truth. duploctl (duplocloud-client) also ships
+  semver releases on GitHub (latest 0.4.3, 2026-03-18).

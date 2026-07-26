@@ -1,0 +1,47 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/duplocloud + PyPI + Terraform Registry
+packages:
+  - language: python
+    registry: pypi
+    name: duplocloud-client
+    url: https://pypi.org/project/duplocloud-client/
+    install: pip install duplocloud-client
+    repo: https://github.com/duplocloud/duploctl
+    description: Official CLI and Python SDK (duploctl) for managing DuploCloud infrastructure; 30+ resource types.
+    official: true
+  - language: hcl
+    registry: terraform
+    name: duplocloud/duplocloud
+    url: https://registry.terraform.io/providers/duplocloud/duplocloud/latest
+    install: 'terraform { required_providers { duplocloud = { source = "duplocloud/duplocloud" } } }'
+    repo: https://github.com/duplocloud/terraform-provider-duplocloud
+    description: Terraform provider for the DuploCloud platform.
+    official: true
+  - language: hcl
+    registry: terraform
+    name: duplocloud/duploai
+    url: https://registry.terraform.io/providers/duplocloud/duploai/latest
+    repo: https://github.com/duplocloud/terraform-provider-duploai
+    description: Terraform provider for DuploCloud AI features.
+    official: true
+  - language: go
+    registry: github
+    name: pulumi-duplocloud
+    url: https://github.com/duplocloud/pulumi-duplocloud
+    description: Pulumi provider for managing DuploCloud Portals.
+    official: true
+  - language: go
+    registry: homebrew
+    name: duplo-jit
+    url: https://github.com/duplocloud/duplo-jit
+    install: brew install duplocloud/tap/duplo-jit
+    description: Command-line tools for JIT (just-in-time) AWS access via DuploCloud.
+    official: true
+  - language: ruby
+    registry: homebrew
+    name: homebrew-tap
+    url: https://github.com/duplocloud/homebrew-tap
+    install: brew tap duplocloud/tap
+    description: Homebrew tap distributing DuploCloud CLI projects (duploctl, duplo-jit).
+    official: true

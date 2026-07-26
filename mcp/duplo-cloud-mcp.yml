@@ -1,0 +1,38 @@
+generated: '2026-07-18'
+method: searched
+status: published
+source: https://docs.duplocloud.com/docs/armor/additional-components/configuring-duplo-mcp-server.md
+server:
+  name: duplocloud
+  official: true
+  transport: http
+  # Endpoint is per-organization; the DuploCloud HelpDesk host exposes /mcp.
+  url_pattern: https://helpdesk.duplo.<yourcompany>.com/mcp
+  auth:
+    type: bearer
+    header: Authorization
+    note: Requires a DuploCloud User Token as a Bearer token.
+install:
+  claude_desktop: 'npx -y mcp-remote https://helpdesk.duplo.<yourcompany>.com/mcp --header "Authorization: Bearer <token>"'
+  claude_code: 'claude mcp add duplocloud --transport http https://helpdesk.duplo.<yourcompany>.com/mcp --header "Authorization: Bearer <token>"'
+description: >-
+  The DuploCloud MCP (Model Context Protocol) server exposes your DuploCloud HelpDesk
+  as a set of tools that AI assistants can call directly to create tickets and manage
+  workspaces, agents, skills, environments, and providers.
+tools:
+  - name: create_ticket
+    description: Create a HelpDesk ticket.
+  - name: manage_workspaces
+    description: Manage DuploCloud workspaces.
+  - name: manage_agents
+    description: Manage DuploCloud DevOps agents.
+  - name: manage_skills
+    description: Manage agent skills.
+  - name: manage_environments
+    description: Manage environments.
+  - name: manage_providers
+    description: Manage provider integrations.
+tools_note: >-
+  Tool list summarized from the published capability description ("create tickets,
+  manage workspaces, agents, skills, environments, providers, and more"); the live
+  server advertises the authoritative tool schema over the MCP protocol.

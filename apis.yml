@@ -1,7 +1,27 @@
 aid: duplo-cloud
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/duplo-cloud.png
 name: Duplo Cloud
-description: Duplo Cloud is a company surfaced as a portfolio company of mayfield and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  DuploCloud is an AI-native DevOps platform that automates cloud infrastructure
+  provisioning, security, and compliance across AWS, Azure, GCP, and Kubernetes. Its
+  ARMOR agent runtime lets teams build and run AI DevOps agents that create tickets,
+  manage workspaces, environments, and providers, while continuously enforcing SOC 2,
+  HIPAA, PCI-DSS, NIST, ISO, HITRUST, and FedRAMP controls. Developers work with the
+  platform through a web UI, a REST API, the duploctl CLI/Python SDK, Terraform and
+  Pulumi providers, a Claude Code plugin, an official MCP server, and Slack/Teams.
+  Backed by Mayfield.
 url: https://raw.githubusercontent.com/api-evangelist/duplo-cloud/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- DevOps
+- Cloud Infrastructure
+- Infrastructure as Code
+- Security and Compliance
+- AI Agents
+- Kubernetes
+- Automation
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +50,48 @@ maintainers:
 common:
 - type: Website
   url: https://duplocloud.com
+- type: Documentation
+  url: https://docs.duplocloud.com/docs
+- type: DeveloperPortal
+  url: https://docs.duplocloud.com/docs
+- type: GettingStarted
+  url: https://docs.duplocloud.com/docs/introduction/readme
+- type: Blog
+  url: https://duplocloud.com/blog
+- type: Pricing
+  url: https://duplocloud.com/pricing/
+- type: SignUp
+  url: https://duplocloud.com/request-a-demo
+- type: Support
+  url: mailto:support@duplocloud.com
+- type: PrivacyPolicy
+  url: https://duplocloud.com/legal/privacy-policy/
+- type: GitHubOrganization
+  url: https://github.com/duplocloud
+- type: Authentication
+  url: authentication/duplo-cloud-authentication.yml
+- type: Packages
+  url: packages/duplo-cloud-packages.yml
+- type: SDKs
+  url: packages/duplo-cloud-packages.yml
+- type: CLI
+  url: cli/duplo-cloud-cli.yml
+- type: MCPServer
+  url: mcp/duplo-cloud-mcp.yml
+- type: LLMsTxt
+  url: llms/duplo-cloud-llms.txt
+- type: ChangeLog
+  url: changelog/duplo-cloud-changelog.yml
+- type: Conformance
+  url: conformance/duplo-cloud-conformance.yml
+- type: Compliance
+  url: https://duplocloud.com/solutions/security-and-compliance/
+- type: TrustCenter
+  url: security/duplo-cloud-trust-center.yml
+- type: DomainSecurity
+  url: security/duplo-cloud-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

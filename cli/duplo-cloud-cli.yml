@@ -1,0 +1,38 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/duplocloud/duploctl
+name: duploctl
+description: >-
+  Official DuploCloud command-line client and Python SDK. Works as a standalone
+  CLI or as an importable Python module, covering 30+ DuploCloud resource types.
+repo: https://github.com/duplocloud/duploctl
+docs: https://docs.duplocloud.com/docs
+install:
+  - method: pip
+    command: pip install duplocloud-client
+  - method: homebrew
+    command: brew install duplocloud/tap/duploctl
+  - method: docker
+    command: docker run duplocloud/duploctl
+  - method: github-release
+    command: Download binary from https://github.com/duplocloud/duploctl/releases
+auth:
+  env:
+    - DUPLO_HOST
+    - DUPLO_TOKEN
+  note: Set the portal host and a User Token (Bearer) to authenticate.
+resources:
+  - tenant
+  - service
+  - infrastructure
+  - rds
+  - s3
+  - lambda
+resources_note: >-
+  30+ resource types total; the list above is a representative sample published in
+  the project description. Each resource exposes list/create/update/delete style
+  subcommands (e.g. `duploctl tenant list`, `duploctl service update`).
+companion_cli:
+  - name: duplo-jit
+    repo: https://github.com/duplocloud/duplo-jit
+    description: JIT (just-in-time) AWS credential access from DuploCloud.

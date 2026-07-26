@@ -1,0 +1,742 @@
+# DuploCloud Documentation
+
+## Overview
+
+- [Overview](https://docs.duplocloud.com/docs/introduction/readme.md)
+- [Copy of Overview](https://docs.duplocloud.com/docs/introduction/readme-1.md): An overview and demo of DuploCloud's AI DevOps Platform
+- [NEW Overview](https://docs.duplocloud.com/docs/introduction/new-overview.md)
+- [The Problem Statement](https://docs.duplocloud.com/docs/introduction/the-problem-statement.md): From Automation to Cognition: Architecting an AI-Native DevOps Platform
+- [The Three-Layer Architecture](https://docs.duplocloud.com/docs/introduction/the-three-layer-architecture.md): From Automation to Cognition: Architecting an AI-Native DevOps Platform
+- [The Extension Framework](https://docs.duplocloud.com/docs/introduction/the-extension-framework.md): From Automation to Cognition: Architecting an AI-Native DevOps Platform
+- [Studio: Developer Experience](https://docs.duplocloud.com/docs/introduction/studio-developer-experience.md)
+- [ARMOR Policy Model](https://docs.duplocloud.com/docs/armor/ai-devops-policy-model.md): A high-level overview of the building blocks of DuploCloud's AI DevOps Engineer
+- [Providers](https://docs.duplocloud.com/docs/armor/providers.md): Integrations with your IT systems
+- [MCP Servers](https://docs.duplocloud.com/docs/armor/mcp-servers.md)
+- [Credential Masking For MCP Servers](https://docs.duplocloud.com/docs/armor/mcp-servers/credential-masking-for-mcp-servers.md)
+- [Skills](https://docs.duplocloud.com/docs/armor/skills.md): Give you agent super powers by adding skills
+- [Platform Skills and Overrides](https://docs.duplocloud.com/docs/armor/skills/platform-skills-and-overrides.md)
+- [Personas](https://docs.duplocloud.com/docs/armor/personas.md)
+- [Duplo DevOps Agent](https://docs.duplocloud.com/docs/armor/agents.md)
+- [Workspaces](https://docs.duplocloud.com/docs/armor/workspaces.md): This is where it all comes together!
+- [Projects](https://docs.duplocloud.com/docs/armor/projects.md)
+- [HelpDesk](https://docs.duplocloud.com/docs/armor/helpdesk.md)
+- [Tickets](https://docs.duplocloud.com/docs/armor/tickets.md)
+- [Incident Management](https://docs.duplocloud.com/docs/armor/incident-management.md)
+- [AI Dashboards](https://docs.duplocloud.com/docs/armor/ai-dashboards.md)
+- [Access Control](https://docs.duplocloud.com/docs/armor/access-control.md)
+- [Permission Sets](https://docs.duplocloud.com/docs/armor/access-control/permission-sets.md)
+- [Users](https://docs.duplocloud.com/docs/armor/access-control/users.md)
+- [User Groups](https://docs.duplocloud.com/docs/armor/access-control/user-groups.md)
+- [User Tokens](https://docs.duplocloud.com/docs/armor/access-control/user-tokens.md)
+- [Quotas](https://docs.duplocloud.com/docs/armor/access-control/quotas.md)
+- [AI Guardrails](https://docs.duplocloud.com/docs/armor/access-control/ai-guardrails.md)
+- [Additional Components](https://docs.duplocloud.com/docs/armor/additional-components.md)
+- [Resources](https://docs.duplocloud.com/docs/armor/additional-components/resources.md)
+- [Reports](https://docs.duplocloud.com/docs/armor/additional-components/reports.md)
+- [Slack Integration](https://docs.duplocloud.com/docs/armor/additional-components/slack-integration.md)
+- [Duplo Claude Plugin](https://docs.duplocloud.com/docs/armor/additional-components/duplo-claude-plugin.md)
+- [Configuring the DuploCloud MCP Server](https://docs.duplocloud.com/docs/armor/additional-components/configuring-duplo-mcp-server.md)
+- [FAQs](https://docs.duplocloud.com/docs/faqs.md): If your question isn't answered here, reach out to the team at support@duplocloud.com or contact us on Slack.
+- [Product Updates](https://docs.duplocloud.com/docs/product-updates.md)
+- [Reporting AI Concerns](https://docs.duplocloud.com/docs/reporting-ai-concerns.md)
+- [Overview](https://docs.duplocloud.com/docs/extension-framework/extension-framework.md)
+- [Building an Ops Application](https://docs.duplocloud.com/docs/extension-framework/building-an-ops-app.md)
+- [Step 1: Define Your Policy Model](https://docs.duplocloud.com/docs/extension-framework/building-an-ops-app/step-1-policy-model.md)
+- [Step 2: Write Your Skills](https://docs.duplocloud.com/docs/extension-framework/building-an-ops-app/step-2-skills.md)
+- [Step 3: Connect Providers](https://docs.duplocloud.com/docs/extension-framework/building-an-ops-app/step-3-providers.md)
+- [Step 4: Configure Workspaces](https://docs.duplocloud.com/docs/extension-framework/building-an-ops-app/step-4-workspaces.md)
+- [Step 5: Deploy](https://docs.duplocloud.com/docs/extension-framework/building-an-ops-app/step-5-deploy.md)
+- [Case Studies](https://docs.duplocloud.com/docs/extension-framework/case-studies.md)
+- [AI-Native DevOps Platform](https://docs.duplocloud.com/docs/extension-framework/case-studies/devops-platform.md)
+- [AI-Powered SalesOps](https://docs.duplocloud.com/docs/extension-framework/case-studies/salesops-platform.md)
+- [Plugin Architecture](https://docs.duplocloud.com/docs/extension-framework/plugin-architecture.md)
+- [Manifest & Registration](https://docs.duplocloud.com/docs/extension-framework/plugin-architecture/manifest-and-registration.md)
+- [Storage API](https://docs.duplocloud.com/docs/extension-framework/plugin-architecture/storage-api.md)
+- [Authentication](https://docs.duplocloud.com/docs/extension-framework/plugin-architecture/authentication.md)
+- [Lifecycle States](https://docs.duplocloud.com/docs/extension-framework/plugin-architecture/lifecycle-states.md)
+- [Schema Versioning](https://docs.duplocloud.com/docs/extension-framework/plugin-architecture/schema-versioning.md)
+- [HelpDesk Concepts](https://docs.duplocloud.com/docs/ai-helpdesk/ai-helpdesk-overview.md)
+- [Tickets](https://docs.duplocloud.com/docs/ai-helpdesk/ai-helpdesk-overview/tickets.md)
+- [Agents](https://docs.duplocloud.com/docs/ai-helpdesk/ai-helpdesk-overview/out-of-the-box-agents.md): An overview of DuploCloud's pre-built AI Agents
+- [Bring Your Own Agent](https://docs.duplocloud.com/docs/ai-helpdesk/ai-helpdesk-overview/bring-your-own-agent.md)
+- [Developers](https://docs.duplocloud.com/docs/ai-helpdesk/ai-helpdesk-overview/developers.md)
+- [AWS Extension](https://docs.duplocloud.com/docs/aws-extension/aws-extension.md): AI-native AWS infrastructure management — connect to existing environments or provision new ones from scratch.
+- [Policy Model](https://docs.duplocloud.com/docs/aws-extension/aws-extension/policy-model.md): The building blocks of the AWS Extension — resources, their specs, results, and how they relate to each other.
+- [Network Baseline](https://docs.duplocloud.com/docs/aws-extension/aws-extension/policy-model/network-baseline.md): Provision or import a well-architected AWS VPC network that serves as the foundation for your cloud infrastructure.
+- [Cluster Baseline](https://docs.duplocloud.com/docs/aws-extension/aws-extension/policy-model/cluster-baseline.md): Provision an AWS EKS cluster on top of a Network Baseline.
+- [Environment](https://docs.duplocloud.com/docs/aws-extension/aws-extension/policy-model/environment.md): A deployment boundary inside a cluster — isolated with its own IAM roles, security groups, and KMS keys.
+- [Plan](https://docs.duplocloud.com/docs/aws-extension/aws-extension/policy-model/plan.md): An AWS account-level catalog of hosted zones, ACM certificates, and AMIs that Environments and workloads can reference.
+- [Faults](https://docs.duplocloud.com/docs/aws-extension/aws-extension/policy-model/faults.md): Cross-resource issues detected across the AWS Extension hierarchy — surfaced with severity, context, and links to the originating ticket.
+- [Kubernetes Resources](https://docs.duplocloud.com/docs/aws-extension/aws-extension/policy-model/kubernetes.md): Kubernetes resources managed inside an Environment — namespaces, workloads, configs, secrets, and storage.
+- [Namespaces](https://docs.duplocloud.com/docs/aws-extension/aws-extension/policy-model/kubernetes/namespaces.md): Logical partitions within the cluster for organizing and isolating workloads.
+- [Node Groups](https://docs.duplocloud.com/docs/aws-extension/aws-extension/policy-model/kubernetes/node-groups.md): EC2 node groups that provide compute capacity for your EKS cluster.
+- [Workloads](https://docs.duplocloud.com/docs/aws-extension/aws-extension/policy-model/kubernetes/workloads.md): Kubernetes workloads — Deployments, DaemonSets, StatefulSets, and CronJobs running inside an Environment.
+- [Configs and Secrets](https://docs.duplocloud.com/docs/aws-extension/aws-extension/policy-model/kubernetes/configs-and-secrets.md): ConfigMaps and Kubernetes Secrets for managing configuration and sensitive data.
+- [Storage](https://docs.duplocloud.com/docs/aws-extension/aws-extension/policy-model/kubernetes/storage.md): Persistent storage for Kubernetes workloads — Storage Classes and Persistent Volume Claims.
+- [Databases](https://docs.duplocloud.com/docs/aws-extension/aws-extension/policy-model/databases.md): Managed databases inside an Environment — RDS and ElastiCache.
+- [RDS](https://docs.duplocloud.com/docs/aws-extension/aws-extension/policy-model/databases/rds.md): Amazon RDS instances and clusters managed inside an Environment.
+- [ElastiCache](https://docs.duplocloud.com/docs/aws-extension/aws-extension/policy-model/databases/elasticache.md): Amazon ElastiCache instances managed inside an Environment — Redis and Memcached.
+- [Installation](https://docs.duplocloud.com/docs/aws-extension/aws-extension/installation.md): Connect DuploCloud to your AWS accounts and cloud providers.
+- [Quick Start](https://docs.duplocloud.com/docs/aws-extension/aws-extension/quick-start.md): Get up and running with the AWS Extension — two paths depending on where you are starting from.
+- [Connect to Existing Infrastructure](https://docs.duplocloud.com/docs/aws-extension/aws-extension/quick-start/connect-existing.md): Connect DuploCloud to your existing AWS infrastructure and start working immediately.
+- [Example: Cost Optimization](https://docs.duplocloud.com/docs/aws-extension/aws-extension/quick-start/connect-existing/example-cost-optimization.md): A worked example — connect to an existing AWS account and run a cost optimization analysis using a HelpDesk ticket.
+- [Example: Security and Compliance](https://docs.duplocloud.com/docs/aws-extension/aws-extension/quick-start/connect-existing/example-security-compliance.md): Use DuploCloud to audit your AWS account against a compliance framework, fix failing controls, and track score improvements — without manually hunting down issues.
+- [Example: AWS Performance Dashboard](https://docs.duplocloud.com/docs/aws-extension/aws-extension/quick-start/connect-existing/example-performance-dashboard.md): Use DuploCloud to build a reusable AWS performance dashboard — pulling live metrics from CloudWatch across EKS, RDS, and EC2 without writing any dashboard code.
+- [Example: Developer Self-Service via Slack](https://docs.duplocloud.com/docs/aws-extension/aws-extension/quick-start/connect-existing/example-developer-self-service.md): Let developers request AWS resources directly from Slack — the agent provisions, opens a PR, and closes the Jira ticket autonomously.
+- [Example: Infrastructure Audit and Hardening](https://docs.duplocloud.com/docs/aws-extension/aws-extension/quick-start/connect-existing/example-infrastructure-audit.md): Connect an existing AWS service to DuploCloud and get it from zero observability to production-ready — with security hardening, cost controls, and automated pipelines.
+- [Example: Troubleshooting and Root Cause Analysis](https://docs.duplocloud.com/docs/aws-extension/aws-extension/quick-start/connect-existing/example-troubleshooting.md): Investigate and resolve AWS infrastructure issues — EKS pod crashes, RDS degradation, ALB errors — using the AI agent as your first responder.
+- [Provision New Infrastructure](https://docs.duplocloud.com/docs/aws-extension/aws-extension/quick-start/provision-new.md): Build new AWS infrastructure from scratch — Network, Cluster, Plan, Environment, Workloads, and Databases.
+- [Step 1: Create a Network](https://docs.duplocloud.com/docs/aws-extension/aws-extension/quick-start/provision-new/step-1-network.md): Create a Network Baseline — a VPC with public and private subnets across multiple availability zones.
+- [Step 2: Create a Cluster](https://docs.duplocloud.com/docs/aws-extension/aws-extension/quick-start/provision-new/step-2-cluster.md): Create a Cluster Baseline — an EKS cluster built on top of your Network Baseline.
+- [Step 3: Create a Plan](https://docs.duplocloud.com/docs/aws-extension/aws-extension/quick-start/provision-new/step-3-plan.md): Create a Plan — an account-level catalog of hosted zones, ACM certificates, and AMIs.
+- [Step 4: Create an Environment](https://docs.duplocloud.com/docs/aws-extension/aws-extension/quick-start/provision-new/step-4-environment.md): Create an Environment — a deployment boundary inside your cluster with dedicated IAM and network isolation.
+- [Step 5: Deploy Workloads](https://docs.duplocloud.com/docs/aws-extension/aws-extension/quick-start/provision-new/step-5-workloads.md): Deploy a workload into your Environment — create a Namespace and a Deployment.
+- [Step 6: Add Databases](https://docs.duplocloud.com/docs/aws-extension/aws-extension/quick-start/provision-new/step-6-databases.md): Add a managed database to your Environment — RDS or ElastiCache.
+- [Customizing the Extension](https://docs.duplocloud.com/docs/aws-extension/aws-extension/customizing.md): Override default skills and adapt the AWS Extension to your organization's standards.
+- [Skill Mapping](https://docs.duplocloud.com/docs/aws-extension/aws-extension/customizing/skill-mapping.md): Override the default provisioning skill for a specific resource type with a custom skill.
+- [Use Cases](https://docs.duplocloud.com/docs/aws-extension/aws-extension/use-cases.md): Common AWS operational workflows and how to accomplish them with the AWS Extension.
+- [Services](https://docs.duplocloud.com/docs/aws-extension/aws-extension/services.md): AWS services available within your Environments — with links to full documentation.
+- [GCP Extension](https://docs.duplocloud.com/docs/gcp-extension/gcp-extension.md)
+- [Azure Extension](https://docs.duplocloud.com/docs/azure-extension/azure-extension.md)
+- [Observability Extension](https://docs.duplocloud.com/docs/observability-extension/observability-extension.md)
+- [Security Extension](https://docs.duplocloud.com/docs/security-extension/security-extension.md)
+- [CI/CD Extension](https://docs.duplocloud.com/docs/ci-cd-extension/ci-cd-extension.md)
+- [Installation](https://docs.duplocloud.com/docs/getting-started/installation.md)
+- [AWS Installation](https://docs.duplocloud.com/docs/getting-started/installation/aws-installation.md)
+- [Azure Installation](https://docs.duplocloud.com/docs/getting-started/installation/azure-installation.md)
+- [GCP Installation](https://docs.duplocloud.com/docs/getting-started/installation/gcp-installation.md)
+- [Helm Chart Configuration](https://docs.duplocloud.com/docs/getting-started/installation/helm-chart-configuration.md): Reference for the Helm chart values used to configure a DuploCloud AI HelpDesk installation — application settings, authentication, storage, ingress, and optional integrations.
+- [AI DevOps V1 to V2 Upgrade](https://docs.duplocloud.com/docs/getting-started/installation/v1-to-v2-upgrade.md)
+- [Slack Bot Installation](https://docs.duplocloud.com/docs/getting-started/installation/slackbot-installation.md)
+- [Integrating Providers](https://docs.duplocloud.com/docs/getting-started/integrating-providers.md)
+- [Amazon Web Services (AWS)](https://docs.duplocloud.com/docs/getting-started/integrating-providers/amazon-web-services-aws.md)
+- [Microsoft Azure](https://docs.duplocloud.com/docs/getting-started/integrating-providers/microsoft-azure.md)
+- [Google Cloud Platform (GCP)](https://docs.duplocloud.com/docs/getting-started/integrating-providers/google-cloud-platform-gcp.md)
+- [Amazon Elastic Kubernetes Service (EKS)](https://docs.duplocloud.com/docs/getting-started/integrating-providers/amazon-elastic-kubernetes-service-eks.md)
+- [Azure Kubernetes Service (AKS)](https://docs.duplocloud.com/docs/getting-started/integrating-providers/azure-kubernetes-service-aks.md)
+- [Google Kubernetes Engine (GKE)](https://docs.duplocloud.com/docs/getting-started/integrating-providers/google-kubernetes-engine-gke.md)
+- [Self-Managed / On-Prem Kubernetes](https://docs.duplocloud.com/docs/getting-started/integrating-providers/self-managed-kubernetes.md): Connect a self-managed or on-premises Kubernetes cluster to DuploCloud AI by creating a service account token and registering it as a Kubernetes provider.
+- [Datadog](https://docs.duplocloud.com/docs/getting-started/integrating-providers/datadog.md)
+- [NewRelic](https://docs.duplocloud.com/docs/getting-started/integrating-providers/newrelic.md)
+- [Sentry](https://docs.duplocloud.com/docs/getting-started/integrating-providers/sentry.md)
+- [PagerDuty](https://docs.duplocloud.com/docs/getting-started/integrating-providers/pagerduty.md)
+- [GitHub](https://docs.duplocloud.com/docs/getting-started/integrating-providers/github.md)
+- [GitLab](https://docs.duplocloud.com/docs/getting-started/integrating-providers/gitlab.md)
+- [BitBucket](https://docs.duplocloud.com/docs/getting-started/integrating-providers/bitbucket.md)
+- [Notion](https://docs.duplocloud.com/docs/getting-started/integrating-providers/notion.md)
+- [Jira](https://docs.duplocloud.com/docs/getting-started/integrating-providers/jira.md)
+- [Heroku](https://docs.duplocloud.com/docs/getting-started/integrating-providers/heroku.md)
+- [Integrating MCP Servers](https://docs.duplocloud.com/docs/getting-started/integrating-mcp-servers.md)
+- [Linear](https://docs.duplocloud.com/docs/getting-started/integrating-mcp-servers/linear.md)
+- [Onboarding](https://docs.duplocloud.com/docs/getting-started/duplocloud-onboarding.md): What you can expect during the DuploCloud onboarding process
+- [Support Options: Standard vs. Managed Operations](https://docs.duplocloud.com/docs/getting-started/duplocloud-support-options-standard-vs.-managed-operations.md): DuploCloud offers two levels of ongoing support designed to meet different customer needs: Standard Support, and Managed Operations.
+- [Getting Help with DuploCloud](https://docs.duplocloud.com/docs/getting-started/duplocloud-support-model.md): Support features included with the product and how to contact DuploCloud Support
+- [Getting Started with DuploCloud](https://docs.duplocloud.com/docs/getting-started/welcome-to-duplocloud.md): An outline of the DuploCloud approach compared to existing DevOps
+- [Common Use Cases](https://docs.duplocloud.com/docs/getting-started/welcome-to-duplocloud/what-duplocloud-does.md): How DuploCloud is able to provide comprehensive DevOps support in a single intuitive tool
+- [How to manage large complex projects](https://docs.duplocloud.com/docs/common-use-cases/how-to-manage-large-complex-projects.md)
+- [Security and Compliance](https://docs.duplocloud.com/docs/common-use-cases/security-and-compliance.md)
+- [How Engineering and DevOps can work together](https://docs.duplocloud.com/docs/common-use-cases/how-engineering-and-devops-can-work-together.md)
+- [Developer Self Service via Slackbot](https://docs.duplocloud.com/docs/common-use-cases/developer-self-service-via-slackbot.md)
+- [Overview](https://docs.duplocloud.com/docs/automation-platform/readme-1.md): An overview and demo of DuploCloud's comprehensive DevOps platform
+- [Policy Model](https://docs.duplocloud.com/docs/automation-platform/application-focused-interface-duplocloud-architecture.md): A high-level overview of the building blocks of DuploCloud's infrastructure-based architecture
+- [Infrastructure](https://docs.duplocloud.com/docs/automation-platform/application-focused-interface-duplocloud-architecture/infrastructure.md): A conceptual overview of DuploCloud Infrastructures
+- [Plan](https://docs.duplocloud.com/docs/automation-platform/application-focused-interface-duplocloud-architecture/plan.md): A conceptual overview of DuploCloud Plans
+- [Tenant](https://docs.duplocloud.com/docs/automation-platform/application-focused-interface-duplocloud-architecture/tenant.md): A conceptual overview of DuploCloud Tenants
+- [Hosts](https://docs.duplocloud.com/docs/automation-platform/application-focused-interface-duplocloud-architecture/hosts.md): A conceptual overview of DuploCloud Hosts
+- [Services](https://docs.duplocloud.com/docs/automation-platform/application-focused-interface-duplocloud-architecture/app-service-and-cloud-services.md): A conceptual overview of DuploCloud Services
+- [DuploCloud Tenancy Models](https://docs.duplocloud.com/docs/automation-platform/application-focused-interface-duplocloud-architecture/duplocloud-tenancy-models.md): An outline of the tenancy deployment models supported by DuploCloud
+- [DuploCloud Common Components](https://docs.duplocloud.com/docs/automation-platform/application-focused-interface-duplocloud-architecture/duplocloud-common-components.md): DuploCloud components common to AWS, GCP, and Azure DuploCloud deployments
+- [Diagnostics](https://docs.duplocloud.com/docs/automation-platform/application-focused-interface-duplocloud-architecture/duplocloud-common-components/diagnostics.md): An overview of DuploCloud diagnostics
+- [Management Portal Scope](https://docs.duplocloud.com/docs/automation-platform/application-focused-interface-duplocloud-architecture/management-portal-scope.md): An overview of the scope of cloud provider resources (accounts) that a DuploCloud Portal can manage
+- [Product Updates](https://docs.duplocloud.com/docs/automation-platform/product-updates.md): New features and enhancements in DuploCloud
+- [Product Update Archives](https://docs.duplocloud.com/docs/automation-platform/product-updates/product-update-archives.md)
+- [Container Orchestrators](https://docs.duplocloud.com/docs/automation-platform/container-orchestrators.md): An overview of the container orchestration technologies DuploCloud supports
+- [Terminologies in Container Orchestration](https://docs.duplocloud.com/docs/automation-platform/container-orchestrators/concepts.md): Key terms and concepts in DuploCloud container orchestration
+- [DuploCloud Prerequisites](https://docs.duplocloud.com/docs/automation-platform/duplocloud-prerequisites.md)
+- [DNS Configuration](https://docs.duplocloud.com/docs/automation-platform/duplocloud-prerequisites/resolving-dns-failures.md): Managing custom DNS records in DuploCloud
+- [Public Cloud Tutorials](https://docs.duplocloud.com/docs/automation-platform/public-cloud-tutorials.md): Links to the Quick Start Guide for each cloud provider
+- [AWS User Guide](https://docs.duplocloud.com/docs/automation-platform/overview.md): Initial steps for AWS DuploCloud users
+- [Prerequisites](https://docs.duplocloud.com/docs/automation-platform/overview/prerequisites.md): Tasks to perform before you use AWS with DuploCloud
+- [Route 53 Hosted Zone](https://docs.duplocloud.com/docs/automation-platform/overview/prerequisites/route-53-hosted-zone.md): Create a Route 53 Hosted Zone to program DNS entries
+- [ACM Certificate](https://docs.duplocloud.com/docs/automation-platform/overview/prerequisites/acm-certificate.md): Create an AWS Certificate Manager certificate
+- [Shell Access for Containers](https://docs.duplocloud.com/docs/automation-platform/overview/prerequisites/kubectl-shell.md): Access the shell for your Native Docker, EKS, and ECS containers
+- [VPN Setup](https://docs.duplocloud.com/docs/automation-platform/overview/prerequisites/vpn-setup.md): Accept OpenVPN, provision the VPN, and add VPN users
+- [Connect to the VPN](https://docs.duplocloud.com/docs/automation-platform/overview/prerequisites/connect-to-the-vpn.md): Obtain VPN credentials and connect to the VPN
+- [AWS Quick Start](https://docs.duplocloud.com/docs/automation-platform/overview/quick-start.md): Get up and running with DuploCloud inside an AWS cloud environment; harness the power of generating application infrastructures.
+- [Step 1: Create Infrastructure and Plan](https://docs.duplocloud.com/docs/automation-platform/overview/quick-start/step-1-infrastructure.md): Create a DuploCloud Infrastructure and Plan
+- [Step 2: Create a Tenant](https://docs.duplocloud.com/docs/automation-platform/overview/quick-start/step-2-tenant.md): Creating a DuploCloud Tenant that segregates your workloads
+- [Step 3: Create an RDS Database (Optional)](https://docs.duplocloud.com/docs/automation-platform/overview/quick-start/step-4-create-a-rds-database.md): Creating an RDS database to integrate with your DuploCloud Service
+- [Creating an EKS Service](https://docs.duplocloud.com/docs/automation-platform/overview/quick-start/quick-start-eks-services.md): Finish the Quick Start Tutorial by creating an EKS Service
+- [Step 4: Create a Host](https://docs.duplocloud.com/docs/automation-platform/overview/quick-start/quick-start-eks-services/step-3-create-host.md): Creating a Host that acts as an EKS Worker node
+- [Step 5: Create a Service](https://docs.duplocloud.com/docs/automation-platform/overview/quick-start/quick-start-eks-services/step-5-create-app-via-k8s.md): Creating a Service to run a Docker-containerized application
+- [Step 6: Create a Load Balancer](https://docs.duplocloud.com/docs/automation-platform/overview/quick-start/quick-start-eks-services/step-6-create-a-load-balancer.md): Creating a Load Balancer to configure network ports to access the application
+- [Step 7: Enable Additional Load Balancer Options (Optional)](https://docs.duplocloud.com/docs/automation-platform/overview/quick-start/quick-start-eks-services/step-7-secure-the-load-balancer.md): Add a security layer and enable other Load Balancer options
+- [Step 8: Create a Custom DNS Name (Optional)](https://docs.duplocloud.com/docs/automation-platform/overview/quick-start/quick-start-eks-services/step-8-create-dns-name.md): Changing the DNS Name for ease of use
+- [Step 9: Test the Application](https://docs.duplocloud.com/docs/automation-platform/overview/quick-start/quick-start-eks-services/step-9-test-the-application.md): Test the application to ensure you get the results you expect
+- [Creating an ECS Service](https://docs.duplocloud.com/docs/automation-platform/overview/quick-start/quick-start-ecs-services.md): Finish the Quick Start Tutorial by creating an ECS Service
+- [Step 4: Create a Task Definition for an Application](https://docs.duplocloud.com/docs/automation-platform/overview/quick-start/quick-start-ecs-services/step-4-create-app-via-ecs.md): Create a Task Definition for your application in AWS ECS
+- [Step 5: Create the ECS Service and Load Balancer](https://docs.duplocloud.com/docs/automation-platform/overview/quick-start/quick-start-ecs-services/step-5-create-the-ecs-service-and-load-balancer.md): Create an ECS Service from Task Definition and expose it with a Load Balancer
+- [Step 6: Test the Application](https://docs.duplocloud.com/docs/automation-platform/overview/quick-start/quick-start-ecs-services/step-5-test-application.md): Test the application to ensure you get the results you expect
+- [Creating a Native Docker Service](https://docs.duplocloud.com/docs/automation-platform/overview/quick-start/quick-start-duplocloud-docker-services.md): Finish the Quick Start Tutorial by running a native Docker Service
+- [Step 4: Create an EC2 Host](https://docs.duplocloud.com/docs/automation-platform/overview/quick-start/quick-start-duplocloud-docker-services/step-4-create-ec2-host.md): Create an EC2 Host in DuploCloud
+- [Step 5: Create a Service](https://docs.duplocloud.com/docs/automation-platform/overview/quick-start/quick-start-duplocloud-docker-services/step-5-create-app-via-docker-native.md): Create a native Docker Service in the DuploCloud Portal
+- [Step 6: Create a Load Balancer](https://docs.duplocloud.com/docs/automation-platform/overview/quick-start/quick-start-duplocloud-docker-services/step-6-create-loadbalancer.md): Create a Load Balancer to expose the native Docker Service
+- [Step 7: Test the Application](https://docs.duplocloud.com/docs/automation-platform/overview/quick-start/quick-start-duplocloud-docker-services/step-7-test-the-application.md)
+- [AWS Use Cases](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases.md): Use Cases supported for DuploCloud AWS
+- [Creating an Infrastructure and Plan for AWS](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/creating-an-infrastructure-and-plan-for-aws.md): Use the DuploCloud Portal to create an AWS Infrastructure and associated Plan
+- [EKS Setup](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/creating-an-infrastructure-and-plan-for-aws/kubernetes-cluster.md): Enable Elastic Kubernetes Service (EKS) for AWS by creating a DuploCloud Infrastructure
+- [Enable EKS endpoints](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/creating-an-infrastructure-and-plan-for-aws/kubernetes-cluster/enable-eks-endpoints.md): Specify EKS endpoints for an Infrastructure
+- [Enable EKS logs](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/creating-an-infrastructure-and-plan-for-aws/kubernetes-cluster/enable-eks-logs.md): Enable logging functionality for EKS
+- [Enable Cluster Autoscaler](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/creating-an-infrastructure-and-plan-for-aws/kubernetes-cluster/enable-cluster-autoscaler.md): Enable Cluster Autoscaler for a Kubernetes cluster
+- [ECS Setup](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/creating-an-infrastructure-and-plan-for-aws/ecs-setup.md): Enable Elastic Container Service (ECS) for AWS when creating a DuploCloud Infrastructure
+- [Enable ECS logging](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/creating-an-infrastructure-and-plan-for-aws/ecs-setup/enable-ecs-logging.md): Enable ECS Elasticsearch logging for containers at the Tenant level
+- [Add VPC endpoints](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/creating-an-infrastructure-and-plan-for-aws/add-vpc-endpoints.md): Securely access AWS Services using VPC endpoints
+- [Infrastructure Security Group Rules](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/creating-an-infrastructure-and-plan-for-aws/security-group-rules.md): Add rules to custom configure your AWS Security Groups at the Infrastructure level
+- [Upgrading the EKS version](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/creating-an-infrastructure-and-plan-for-aws/upgrading-eks-version.md): Upgrade the Elastic Kubernetes Service (EKS) version for AWS
+- [Creating a Tenant (Environment)](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/tenant-environment.md): Using DuploCloud Tenants for AWS
+- [Setting Tenant session duration](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/tenant-environment/tenant-session-duration.md): Manage Tenant session duration settings in the DuploCloud Portal
+- [Setting Tenant expiration](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/tenant-environment/tenant-expiry.md): Manage Tenant expiry settings in the DuploCloud Portal
+- [Tenant Config settings](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/tenant-environment/tenant-config-settings.md): Configure settings for all new Tenants under a Plan
+- [Hosts (VMs)](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/hosts-vms.md): Adding EC2 hosts in DuploCloud AWS
+- [Adding Hosts](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/hosts-vms/adding-hosts.md): Add a Host (VM) in the DuploCloud Portal.
+- [Connect EC2 instance](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/hosts-vms/ssh-ec2-instance.md): Connect an EC2 instance with SSH by Session ID or by downloading a key
+- [Adding Shared Hosts](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/hosts-vms/adding-shared-hosts.md): Deploy Hosts in one Tenant that can be accessed by Kubernetes (K8s) Pods in a separate Tenant.
+- [Adding Dedicated Hosts](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/hosts-vms/adding-dedicated-hosts.md): Control placement of EC2 instances on a physical server with a Dedicated Host
+- [Autoscaling Hosts](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/hosts-vms/auto-scaling.md): Autoscale your Host workloads in DuploCloud
+- [Autoscaling Groups (ASG)](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/hosts-vms/auto-scaling/auto-scaling-groups.md): Create Autoscaling groups to scale EC2 instances to your workload
+- [Launch Templates](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/hosts-vms/auto-scaling/auto-scaling-groups/launch-templates.md): Managing Launch Template Versions for Autoscaling Groups (ASG) in DuploCloud
+- [Instance Refresh for ASG](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/hosts-vms/auto-scaling/auto-scaling-groups/instance-refresh-for-asg.md): Initiate an Instance Refresh for an Auto Scaling Group (ASG) within the DuploCloud Portal.
+- [Scale to or from Zero](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/hosts-vms/auto-scaling/auto-scaling-groups/scale-to-or-from-zero.md): Scale to or from zero when creating Autoscaling Groups in DuploCloud
+- [Spot Instances for AWS](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/hosts-vms/auto-scaling/auto-scaling-groups/spot-instances.md): Create Autoscaling Groups (ASG) with Spot Instances in the DuploCloud platform
+- [ECS Autoscaling](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/hosts-vms/auto-scaling/ecs-auto-scaling.md)
+- [Autoscaling in Kubernetes](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/hosts-vms/auto-scaling/kubernetes-scaling-options.md): Autoscale your DuploCloud Kubernetes deployment
+- [Configure Auto-reboot](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/hosts-vms/configure-auto-reboot.md): Automatically reboot a host upon StatusCheck faults or Host disconnection
+- [Create Amazon Machine Image (AMI)](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/hosts-vms/create-amazon-machine-image-ami.md): Add and view AMIs in AWS
+- [Hibernate an EC2 Host](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/hosts-vms/hibernate-an-ec2-host.md): Save resources by hibernating EC2 hosts while maintaining persistence
+- [EC2 Snapshots](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/hosts-vms/ec2-snapshots.md): Backup your EC2 Hosts using snapshots in DuploCloud
+- [Taints for EKS Nodes](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/hosts-vms/display-tainted-ec2-hosts.md): Manage taints for EKS nodes in the DuploCloud Portal
+- [Disable Source Destination Check](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/hosts-vms/disable-source-destination-check.md): Disable CloudFormation's SourceDestCheck in EC2 Host metadata
+- [Auditing](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/auditing.md): Set up features for auditing and view auditing reports and logs
+- [Logs](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/central-logging.md): Logging for AWS in the DuploCloud Platform
+- [Enable Default-Tenant logging](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/central-logging/central-logging-setup.md): Set up central logging for the DuploCloud Default Tenant
+- [Enable Non-Default Tenant logging](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/central-logging/enable-non-default-tenant-logging.md): Enable log collection for non-Default DuploCloud Tenants
+- [Configure Logging per Tenant](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/central-logging/configure-logging-per-tenant.md): Configure log collection per Tenant in the DuploCloud Portal
+- [Display logs](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/central-logging/log-dashboards.md): Display logs for the DuploCloud Portal, components, services, and containers
+- [Create custom logs](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/central-logging/custom-log-collection.md): Change configuration for the Control Plane, customize Platform Services
+- [Diagnostics and Metrics](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/monitoring.md)
+- [Metrics Setup](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/monitoring/metrics-setup.md)
+- [Metrics Dashboard](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/monitoring/metrics-dashboard.md)
+- [Kubernetes Administrator dashboard](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/monitoring/kubernetes-administrator-dashboard.md): Monitoring Kubernetes status with the K8s Admin dashboard
+- [EKS Auto Mode](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/eks-auto-mode.md): Using EKS Auto Mode with DuploCloud.
+- [Faults and Alerts](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/faults-and-alarms.md)
+- [Alert notifications](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/faults-and-alarms/alerting-and-notifications.md): Enable and view alert notifications in the DuploCloud Portal
+- [Automatic alert creation](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/faults-and-alarms/automatic-alert-creation.md)
+- [Automatic fault healing](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/faults-and-alarms/automatic-fault-healing.md): Fix faults automatically to maintain system health
+- [SNS Topic Alerts](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/faults-and-alarms/sns-topic-alerts.md): Enable setting of SNS Topic Alerts for specific Tenants
+- [System Settings Flags](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/faults-and-alarms/system-settings-flags.md): Make changes to fault settings by adding Flags under Systems Settings in the DuploCloud portal
+- [AWS Console link](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/using-aws-console.md): Access specific resources in the AWS Console using the DuploCloud Portal
+- [Just-in-Time (JIT) Access](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/jit-access.md): Short-lived AWS console sessions and keys.
+- [AWS Billing and Cost Management](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/cost-management.md): Manage billing and costs for AWS resources
+- [Enabling AWS Billing Data](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/cost-management/enable-billing-data.md): Enable billing data in the DuploCloud Portal
+- [Viewing and Monitoring AWS Billing Data](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/cost-management/view-billing-data.md): View billing data and create billing alerts for AWS billing data
+- [Applying Cost Allocation Tags](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/cost-management/cost-allocation-tags.md): Activating cost allocation tags in DuploCloud AWS
+- [DuploCloud License Usage](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/cost-management/duplocloud-license-usage.md): Displaying Node Usage for billing
+- [Resource Quotas](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/resource-quotas.md)
+- [Big Data and ETL](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/big-data-and-etl.md)
+- [Custom Resource Tags](https://docs.duplocloud.com/docs/automation-platform/overview/use-cases/custom-resource-tags.md): Manage custom tags for AWS resources in DuploCloud
+- [AWS Services](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services.md): Managing AWS services and related components
+- [Containers and Services](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/containers.md): Using containers and DuploCloud Services with AWS EKS and ECS
+- [EKS Containers and Services](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/containers/eks-containers-and-services.md): Managing Containers and Service with EKS and Native Docker Services
+- [Allocation Tagging](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/containers/eks-containers-and-services/creating-advanced-functions.md): Pin a container to a set of hosts using allocation tagging
+- [ECS Containers, Task Definitions and Services](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/containers/ecs-containers-and-task-definitions.md): Managing Containers and Service with ECS
+- [Sharing EC2 Auto Scaling Groups Across Tenants for ECS](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/containers/ecs-containers-and-task-definitions/sharing-ec2-auto-scaling-groups-across-tenants-for-ecs.md): Share EC2 Auto Scaling Groups Across Tenants for ECS
+- [Passing Configs and Secrets](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/containers/passing-config-and-secrets.md): Configuration and Secret management in AWS
+- [Container Rollback](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/containers/container-rollback.md): Roll back a container image for Kubernetes or Docker Services
+- [Docker Registry credentials](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/containers/docker-registry-credentials.md): Set Docker registry credentials
+- [Load Balancers](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/load-balancers.md): Creating Load Balancers for single and multiple DuploCloud Services
+- [Target Groups](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/load-balancers/target-groups.md): Create and manage AWS Target Groups to control application traffic routing
+- [EKS Load Balancers](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/load-balancers/eks-load-balancers.md): Working with Load Balancers using AWS EKS
+- [ECS Services and Load Balancers](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/load-balancers/ecs-services-and-load-balancers.md): Working with Load Balancers using AWS ECS
+- [Native Docker Load Balancers](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/load-balancers/native-docker-load-balancers.md): Working with Load Balancers in a Native Docker Service
+- [Using Allocated IPs with AWS Load Balancers](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/load-balancers/using-allocated-ips-with-aws-load-balancers.md): Assign AWS Elastic IPs to public Network Load Balancers
+- [Storage](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/storage.md): Storage services included in DuploCloud for AWS
+- [Storage Class and PVCs](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/storage/adding-k8s-storage-class.md): Set up Storage Classes and PVCs in Kubernetes
+- [GP3 Storage Class](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/storage/gp3-storage-class.md): Enhance performance and cut costs by using the AWS GP3 Storage Class
+- [API Gateway](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/api-gateway.md): Create an AWS API Gateway using a REST API from the DuploCloud Portal
+- [App Runner](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/app-runner.md): Configure AWS App Runner services in DuploCloud
+- [Batch](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/batch.md): Run AWS batch jobs without installing software or servers
+- [CloudFront](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/cloudfront.md): Use Amazon CloudFront with DuploCloud
+- [CloudFront Distributions](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/cloudfront/cloudfront.md): Configure CloudFront distributions in DuploCloud
+- [CloudFront Functions](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/cloudfront/cloudfront-functions.md): Configure CloudFront Functions in DuploCloud
+- [CloudFront Key-Value Stores](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/cloudfront/cloudfront-key-value-stores.md): Configure CloudFront Key-Value Stores in DuploCloud
+- [Databases](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/database.md): Databases supported by DuploCloud AWS
+- [AWS ElastiCache](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/database/elastic-cache.md): Create ElastiCache for Redis database and Memcache memory caching
+- [AWS DynamoDB database](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/database/dynamodb.md)
+- [AWS Timestream database](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/database/timestream-database.md): Support for AWS Timestream databases
+- [RDS database](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/database/rds-database.md): Create and connect to an RDS database instance
+- [Aurora Global Database](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/database/rds-database/aurora-global-database.md)
+- [IAM authentication](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/database/rds-database/iam-authentication.md): Using IAM for secure log-ins to RDS databases
+- [Backup and restore](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/database/rds-database/backup-and-restore.md): Manage backup and restore for Relational Database Services (RDS)
+- [Sharing encrypted database](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/database/rds-database/sharing-encrypted-database.md): Steps for sharing encrypted RDS databases in DuploCloud AWS
+- [Manage RDS Snapshots](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/database/rds-database/manage-rds-snapshots.md)
+- [Add and manage RDS read replicas](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/database/rds-database/add-an-rds-read-replica.md): Create a read replica of your RDS database
+- [Add Aurora RDS replicas](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/database/rds-database/add-an-rds-read-replica/add-aurora-rds-replicas.md): Create a read replica of an Aurora database
+- [Add monitoring interval](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/database/rds-database/add-monitoring-interval.md): Set a monitoring interval for an RDS database
+- [Enable or disable RDS logging](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/database/rds-database/enable-or-disable-rds-logging.md): Turn logging on or off for an AWS RDS
+- [Restrict RDS instance size](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/database/rds-database/restrict-rds-instance-size.md): Set a maximum instance size for an RDS
+- [Add parameters in Parameter Groups](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/database/rds-database/add-parameters-in-parameter-groups.md)
+- [Manage Performance Insights](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/database/rds-database/manage-performance-insights.md): Manage Performance Insights for RDS databases in DuploCloud
+- [Data Pipeline](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/data-pipeline.md)
+- [Elastic Container Registry (ECR)](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/elastic-container-registry-ecr.md): Use AWS Elastic Container Registry with DuploCloud
+- [Sharing ECR Repos](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/elastic-container-registry-ecr/sharing-ecr-repos.md)
+- [Elastic File System (EFS)](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/elastic-file-system-efs.md): Create an Amazon Elastic File System (EFS) from the DuploCloud Portal
+- [Mount an EFS in an EC2 instance](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/elastic-file-system-efs/mount-an-efs-in-an-ec2-instance.md): Mount an EFS in an EC2 instance using a script
+- [EMR Serverless](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/emr-serverless.md): Run big data applications with open-source frameworks without managing clusters and servers
+- [EventBridge](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/eventbridge.md): Create and manage EventBridge rules with DuploCloud
+- [IoT (Internet of Things)](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/iot-internet-of-things.md): Enabling IoT for a Tenant, creating Things and supporting certificates
+- [Kafka Cluster](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/kafka-cluster.md): Create a Kafka cluster for real-time streaming data pipelines and apps
+- [Kinesis Stream](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/kinesis-stream.md)
+- [Lambda Functions](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/lambda.md): Use Lambda to deploy serverless functions in DuploCloud
+- [Configure Lambda with Container Images](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/lambda/create-lambda-using-container-image.md): Using Container Images to configure Lambda
+- [Lambda Layers](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/lambda/lambda-layers.md): Package code libraries for sharing with Lambda Functions
+- [Managed Airflow](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/managed-airflow.md): Configure Apache Airflow for AWS
+- [Amazon MQ](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/amazon-mq.md)
+- [NAT Gateway for HA](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/nat-gateway-for-ha.md): Enable AWS NAT Gateway for High Availability (HA)
+- [OpenSearch](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/elasticsearch.md): Create an OpenSearch domain from the DuploCloud portal
+- [S3 Bucket](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/s3-bucket.md): Create an S3 bucket for AWS storage
+- [S3 Bucket Notifications](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/s3-bucket/s3-bucket-notifications.md): Creating S3 bucket notifications in DuploCloud
+- [AWS Secrets Manager](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/aws-secrets-manager.md): Create and manage secrets in AWS Secrets Manager directly from the DuploCloud Portal
+- [SNS Topic](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/sns-topic.md): Creating SNS Topics
+- [SQS Queue](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/sqs-queue.md): Using Amazon SQS in DuploCloud
+- [Virtual Private Cloud (VPC) Peering](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/virtual-private-cloud-vpc-peering.md): Connect two VPCs for communication using private IP addresses
+- [Web App Firewall (WAF)](https://docs.duplocloud.com/docs/automation-platform/overview/aws-services/web-application-firewall-waf.md): Creating and Using a WAF in DuploCloud AWS
+- [AWS FAQ](https://docs.duplocloud.com/docs/automation-platform/overview/aws-faq.md): Popular and frequently asked questions about DuploCloud and AWS
+- [AWS Systems Settings](https://docs.duplocloud.com/docs/automation-platform/overview/aws-systems-settings.md): Configure Systems Settings in the DuploCloud UI for AWS users
+- [AWS Infrastructure Settings](https://docs.duplocloud.com/docs/automation-platform/overview/aws-systems-settings/aws-infrastructure-settings.md): Configure Infrastructure settings in the DuploCloud UI for AWS users
+- [AWS Tenant Settings](https://docs.duplocloud.com/docs/automation-platform/overview/aws-systems-settings/aws-tenant-settings.md): Configure Tenant settings in the DuploCloud UI for AWS users
+- [AWS Security Configuration Settings](https://docs.duplocloud.com/docs/automation-platform/overview/security-configuration-settings.md)
+- [Tenant Security settings](https://docs.duplocloud.com/docs/automation-platform/overview/security-configuration-settings/tenant-security-settings.md): Configure Tenant Security settings for specific DuploCloud Tenants
+- [Infrastructure Security settings](https://docs.duplocloud.com/docs/automation-platform/overview/security-configuration-settings/infrastructure-security-settings.md): Configure infrastructure Security Settings for Infrastructure and Plan
+- [System Security settings](https://docs.duplocloud.com/docs/automation-platform/overview/security-configuration-settings/system-security-settings.md): Configure global system settings for the DuploCloud Portal
+- [AWS Account Security settings](https://docs.duplocloud.com/docs/automation-platform/overview/security-configuration-settings/aws-account-security-settings.md): Configure AWS Account Security settings for the DuploCloud Portal
+- [Vanta Compliance Controls](https://docs.duplocloud.com/docs/automation-platform/overview/security-configuration-settings/vanta-compliance-controls.md): Configure Vanta compliance controls for your DuploCloud Tenants
+- [GCP User Guide](https://docs.duplocloud.com/docs/automation-platform/overview-1.md): Using DuploCloud with Google Cloud Platform
+- [Container deployments](https://docs.duplocloud.com/docs/automation-platform/overview-1/container-deployments.md): Orchestration across multiple Cloud providers
+- [Container orchestration features](https://docs.duplocloud.com/docs/automation-platform/overview-1/container-deployments/container-orchestrators.md): Multiple container orchestration technologies for ease of consumption
+- [Key DuploCloud concepts](https://docs.duplocloud.com/docs/automation-platform/overview-1/container-deployments/concepts.md): Key concepts for using DuploCloud with Docker and GCP
+- [Prerequisites](https://docs.duplocloud.com/docs/automation-platform/overview-1/prerequisites.md): Tasks to perform before you use GCP with DuploCloud.
+- [Docker Registry](https://docs.duplocloud.com/docs/automation-platform/overview-1/prerequisites/docker-registry.md): Set up a Docker Registry image repository
+- [Service Account Setup](https://docs.duplocloud.com/docs/automation-platform/overview-1/prerequisites/service-account-setup.md): Creating a Service Account for DuploCloud GCP and adding a private key
+- [Cloud DNS Zone](https://docs.duplocloud.com/docs/automation-platform/overview-1/prerequisites/route-53-hosted-zone.md): Creating a Route 53 hosted zone to program DNS entries
+- [Certificates for Load Balancer and Ingress](https://docs.duplocloud.com/docs/automation-platform/overview-1/prerequisites/certificate-for-load-balancer-and-ingress.md): Create global and regional SSL certificates for GCP deployments
+- [Initial Infrastructure Setup](https://docs.duplocloud.com/docs/automation-platform/overview-1/prerequisites/initial-infrastructure-setup.md): Set up the initial DuploCloud Infrastructure
+- [Tools Tenant](https://docs.duplocloud.com/docs/automation-platform/overview-1/prerequisites/tools-tenant.md): Create a DuploCloud Tenant for tools
+- [Enable Kubectl Shell](https://docs.duplocloud.com/docs/automation-platform/overview-1/prerequisites/tools-tenant/enable-kubectl-shell.md): Enable access to the DuploCloud shell for your GCP account
+- [Docker](https://docs.duplocloud.com/docs/automation-platform/overview-1/prerequisites/docker.md): Optional Docker configurations for DuploCloud GCP users
+- [Docker Registry Credentials (Optional)](https://docs.duplocloud.com/docs/automation-platform/overview-1/prerequisites/docker/docker-registry-credentials.md): Set Docker registry credentials
+- [Shell Access for Docker (Optional)](https://docs.duplocloud.com/docs/automation-platform/overview-1/prerequisites/docker/shell-access-for-docker.md): Enabling shell access using Docker Native
+- [VPN](https://docs.duplocloud.com/docs/automation-platform/overview-1/prerequisites/vpn.md): Set up and connect to the VPN for DuploCloud GCP users
+- [VPN Setup](https://docs.duplocloud.com/docs/automation-platform/overview-1/prerequisites/vpn/vpn-setup.md): Integrate with OpenVPN by provisioning VPN users
+- [Connect to the VPN](https://docs.duplocloud.com/docs/automation-platform/overview-1/prerequisites/vpn/connect-to-the-vpn.md): Connecting to the DuploCloud VPN with the OpenVPN client
+- [Managed SSL Certificates with Certificate Manager (Optional)](https://docs.duplocloud.com/docs/automation-platform/overview-1/prerequisites/create-managed-ssl-certificates-for-gcp.md): Create regional or global SSL certificates for GCP using Certificate Manager
+- [GCP Quick Start](https://docs.duplocloud.com/docs/automation-platform/overview-1/quick-start.md): Get up and running with DuploCloud inside a Google Cloud Platform environment; harness the power of generating application infrastructures.
+- [Step 1: Create Infrastructure and Plan](https://docs.duplocloud.com/docs/automation-platform/overview-1/quick-start/step-1-infrastructure.md): Creating the DuploCloud Infrastructure and a Plan
+- [Step 2: Create a Tenant](https://docs.duplocloud.com/docs/automation-platform/overview-1/quick-start/step-2-tenant.md): Creating a DuploCloud Tenant that segregates your workloads
+- [Create a Service with GKE Autopilot](https://docs.duplocloud.com/docs/automation-platform/overview-1/quick-start/create-a-service-with-gke-autopilot.md): Finish the Quick Start Tutorial by creating a Service using GKE Autopilot
+- [Step 3: Create a Service](https://docs.duplocloud.com/docs/automation-platform/overview-1/quick-start/create-a-service-with-gke-autopilot/step-3-create-app-via-k8s.md): Creating a Kubernetes Service to run a Docker-containerized application
+- [Step 4: Create a Load Balancer](https://docs.duplocloud.com/docs/automation-platform/overview-1/quick-start/create-a-service-with-gke-autopilot/step-4-create-a-load-balancer.md): Creating a Load Balancer to configure network ports to access the application
+- [Step 5: Test the Application](https://docs.duplocloud.com/docs/automation-platform/overview-1/quick-start/create-a-service-with-gke-autopilot/step-5-test-the-application.md): Test the application to ensure you get the results you expect
+- [Create a Service with GKE Standard](https://docs.duplocloud.com/docs/automation-platform/overview-1/quick-start/create-a-service-with-gke-standard.md): Finish the Quick Start Tutorial by creating a Service using GKE Standard
+- [Step 3: Create a Node Pool](https://docs.duplocloud.com/docs/automation-platform/overview-1/quick-start/create-a-service-with-gke-standard/step-3-create-a-node-pool.md): Create a Node Pool to run the operating system for your app.
+- [Step 4: Create a Service](https://docs.duplocloud.com/docs/automation-platform/overview-1/quick-start/create-a-service-with-gke-standard/step-3-create-app-via-k8s.md): Creating a Kubernetes Service to run a Docker-containerized application
+- [Step 5: Create a Load Balancer](https://docs.duplocloud.com/docs/automation-platform/overview-1/quick-start/create-a-service-with-gke-standard/step-4-create-a-load-balancer.md): Creating a Load Balancer to configure network ports to access the application
+- [Step 6: Test the Application](https://docs.duplocloud.com/docs/automation-platform/overview-1/quick-start/create-a-service-with-gke-standard/step-5-test-the-application.md): Test the application to ensure you get the results you expect
+- [GCP Use Cases](https://docs.duplocloud.com/docs/automation-platform/overview-1/use-cases.md): Use Cases supported for DuploCloud GCP
+- [Creating an Infrastructure and Plan for GCP](https://docs.duplocloud.com/docs/automation-platform/overview-1/use-cases/creating-an-infrastructure-and-plan-for-gcp.md): Use the DuploCloud Portal to create an Infrastructure and associated Plan for GCP
+- [Kubectl token and config](https://docs.duplocloud.com/docs/automation-platform/overview-1/use-cases/creating-an-infrastructure-and-plan-for-gcp/kubectl-token-and-config.md): Connect to the Cluster namespace using the kubectl token.
+- [Upgrading the GKE version](https://docs.duplocloud.com/docs/automation-platform/overview-1/use-cases/creating-an-infrastructure-and-plan-for-gcp/upgrading-eks-version.md): Upgrade the Google Kubernetes Engine (GKE) version
+- [Creating a Tenant (Environment)](https://docs.duplocloud.com/docs/automation-platform/overview-1/use-cases/tenant-environment.md): Using DuploCloud Tenants for GCP
+- [Tenant expiry](https://docs.duplocloud.com/docs/automation-platform/overview-1/use-cases/tenant-environment/tenant-expiry.md): Manage Tenant expiry settings in the DuploCloud Portal
+- [Tenant Config settings](https://docs.duplocloud.com/docs/automation-platform/overview-1/use-cases/tenant-environment/tenant-config-settings.md): Configure settings for all new Tenants under a Plan
+- [Hosts (VMs)](https://docs.duplocloud.com/docs/automation-platform/overview-1/use-cases/hosts-vms.md): Using Hosts in DuploCloud
+- [GKE Maintenance Windows](https://docs.duplocloud.com/docs/automation-platform/overview-1/use-cases/gke-maintenance-windows.md): Configuring GKE maintenance windows in the DuploCloud Portal
+- [GCP Billing and Cost Management](https://docs.duplocloud.com/docs/automation-platform/overview-1/use-cases/cost-management.md): Manage billing and costs for GCP resources
+- [Enabling GCP Billing Data](https://docs.duplocloud.com/docs/automation-platform/overview-1/use-cases/cost-management/export-billing-to-bigquery.md): Set up GCP billing data access for DuploCloud
+- [Viewing and Monitoring GCP Billing Data](https://docs.duplocloud.com/docs/automation-platform/overview-1/use-cases/cost-management/view-billing-data.md): View billing data and create billing alerts for GCP billing data
+- [Managing Cross-Project Billing in GCP](https://docs.duplocloud.com/docs/automation-platform/overview-1/use-cases/cost-management/manage-cross-project-billing-in-gcp.md)
+- [GCP Services](https://docs.duplocloud.com/docs/automation-platform/overview-1/gcp-services.md): Managing GCP services and related components
+- [Containers and Services](https://docs.duplocloud.com/docs/automation-platform/overview-1/gcp-services/containers-and-services.md): Using containers and DuploCloud Services with GCP GKE
+- [GKE Containers and Services](https://docs.duplocloud.com/docs/automation-platform/overview-1/gcp-services/containers.md): Creating and managing GCP Services and containers
+- [Allocation Tagging](https://docs.duplocloud.com/docs/automation-platform/overview-1/gcp-services/containers/creating-advanced-functions.md): Pin a container to a set of hosts using allocation tagging
+- [Docker Registry credentials](https://docs.duplocloud.com/docs/automation-platform/overview-1/gcp-services/containers/docker-registry-credentials.md): Set Docker registry credentials and Kubernetes secrets
+- [Container Rollback](https://docs.duplocloud.com/docs/automation-platform/overview-1/gcp-services/containers/container-rollback.md): Roll back a container image for Kubernetes or Docker Services
+- [Passing Config and Secrets](https://docs.duplocloud.com/docs/automation-platform/overview-1/gcp-services/containers/passing-config-and-secrets.md): Configuration and Secret management in GCP
+- [GCP Databases](https://docs.duplocloud.com/docs/automation-platform/overview-1/gcp-services/gcp-databases.md)
+- [Cloud SQL](https://docs.duplocloud.com/docs/automation-platform/overview-1/gcp-services/gcp-databases/cloud-sql.md): Adding SQL Databases in DuploCloud
+- [Firestore Database](https://docs.duplocloud.com/docs/automation-platform/overview-1/gcp-services/gcp-databases/firestore-database.md): Create a Firestore Database from within the DuploCoud platform.
+- [Managed Redis](https://docs.duplocloud.com/docs/automation-platform/overview-1/gcp-services/gcp-databases/managed-redis.md): Support for Redis database instances
+- [Load Balancers](https://docs.duplocloud.com/docs/automation-platform/overview-1/gcp-services/step-4-create-a-load-balancer.md): Creating a Load balancer using GCP in DuploCloud
+- [Cloud Armour](https://docs.duplocloud.com/docs/automation-platform/overview-1/gcp-services/cloud-armour.md): Implement GCP Cloud Armour in DuploCloud
+- [Cloud Credentials](https://docs.duplocloud.com/docs/automation-platform/overview-1/gcp-services/cloud-credentials.md): Add GCP subscription details
+- [Cloud Functions](https://docs.duplocloud.com/docs/automation-platform/overview-1/gcp-services/cloud-functions.md): Create Google Cloud Functions in DuploCloud
+- [Cloud Run Service](https://docs.duplocloud.com/docs/automation-platform/overview-1/gcp-services/cloud-run-service.md): Create Google Cloud Run services in DuploCloud
+- [Cloud Scheduler](https://docs.duplocloud.com/docs/automation-platform/overview-1/gcp-services/s3-bucket-1.md): Creating Google Cloud Scheduler jobs in DuploCloud
+- [Cloud Storage](https://docs.duplocloud.com/docs/automation-platform/overview-1/gcp-services/s3-bucket-2.md): Create Cloud Storage Buckets in GCP
+- [Cloud Tasks](https://docs.duplocloud.com/docs/automation-platform/overview-1/gcp-services/cloud-tasks.md): Create and manage Google Cloud Task queues from the DuploCloud Portal
+- [Dynamic NAT Port Allocation](https://docs.duplocloud.com/docs/automation-platform/overview-1/gcp-services/dynamic-nat-port-allocation.md): Enable dynamic NAT port allocation in GCP
+- [Node Pools](https://docs.duplocloud.com/docs/automation-platform/overview-1/gcp-services/node-pools.md): Create Node Pool for GCE in the DuploCloud Portal
+- [Pub/Sub](https://docs.duplocloud.com/docs/automation-platform/overview-1/gcp-services/s3-bucket-3.md): Create Pub/Sub Topic in GCP
+- [GCP Secrets Manager](https://docs.duplocloud.com/docs/automation-platform/overview-1/gcp-services/gcp-secrets-manager.md): Create and manage Google Cloud secrets in DuploCloud
+- [GCP Security Command Center](https://docs.duplocloud.com/docs/automation-platform/overview-1/gcp-services/gcp-security-command-center.md): Utilize GCP Security Command Center with DuploCloud
+- [Virtual Private Cloud (VPC) Peering](https://docs.duplocloud.com/docs/automation-platform/overview-1/gcp-services/virtual-private-cloud-vpc-peering.md): Establish communication between GCP VPCs via VPC peering
+- [GCP FAQs](https://docs.duplocloud.com/docs/automation-platform/overview-1/gcp-faq.md): Common questions about using DuploCloud GCP
+- [GCP Systems Settings](https://docs.duplocloud.com/docs/automation-platform/overview-1/gcp-systems-settings.md): Configure Systems Settings in the DuploCloud UI for GCP users
+- [GCP Infrastructure Settings](https://docs.duplocloud.com/docs/automation-platform/overview-1/gcp-systems-settings/gcp-infrastructure-settings.md): Configure Infrastructure settings in the DuploCloud UI for GCP users
+- [GCP Tenant Settings](https://docs.duplocloud.com/docs/automation-platform/overview-1/gcp-systems-settings/gcp-tenant-settings.md): Configure Tenant settings in the DuploCloud UI for GCP users
+- [GCP Security Settings](https://docs.duplocloud.com/docs/automation-platform/overview-1/security-configuration-settings.md): Configure Security settings in the DuploCloud UI for GCP users
+- [Infrastructure Security settings](https://docs.duplocloud.com/docs/automation-platform/overview-1/security-configuration-settings/infrastructure-security-settings.md): Configure Infrastructure and Plan Security Settings GCP users
+- [GCP Account Security settings](https://docs.duplocloud.com/docs/automation-platform/overview-1/security-configuration-settings/aws-account-security-settings.md): Configure GCP Account Security settings in the DuploCloud Portal
+- [GCP Firewall Rules](https://docs.duplocloud.com/docs/automation-platform/overview-1/security-configuration-settings/gcp-firewall-rules.md): Configure firewall rules in DuploCloud for GCP environments
+- [Infrastructure Firewall Rules](https://docs.duplocloud.com/docs/automation-platform/overview-1/security-configuration-settings/gcp-firewall-rules/infrastructure-firewall-rules.md): Configure infrastructure firewall rules in DuploCloud for GCP environments
+- [Tenant-Based Firewall Rules](https://docs.duplocloud.com/docs/automation-platform/overview-1/security-configuration-settings/gcp-firewall-rules/tenant-based-firewall-rules.md): Configure Tenant-based firewall rules in DuploCloud for GCP environments
+- [Azure User Guide](https://docs.duplocloud.com/docs/automation-platform/overview-2.md): Using DuploCloud with Microsoft Azure
+- [Container Deployments](https://docs.duplocloud.com/docs/automation-platform/overview-2/container-deployments.md): Orchestration across multiple Cloud providers
+- [Container Orchestration Features](https://docs.duplocloud.com/docs/automation-platform/overview-2/container-deployments/container-orchestrators.md): Support orchestration technologies
+- [Key DuploCloud Concepts](https://docs.duplocloud.com/docs/automation-platform/overview-2/container-deployments/concepts.md): Key concepts for using DuploCloud with Docker and Azure
+- [Prerequisites](https://docs.duplocloud.com/docs/automation-platform/overview-2/prerequisites.md): Tasks to perform before you use Azure with DuploCloud
+- [Program DNS Entries](https://docs.duplocloud.com/docs/automation-platform/overview-2/prerequisites/program-dns-entries.md): Add DNS entries for DuploCloud Services to use your domain names
+- [Import SSL Certificates](https://docs.duplocloud.com/docs/automation-platform/overview-2/prerequisites/import-ssl-certificates.md): Import SSL certificates to establish secure access to the DuploCloud Portal
+- [Provision the VPN](https://docs.duplocloud.com/docs/automation-platform/overview-2/prerequisites/vpn-setup.md): Integrate DuploCloud with OpenVPN by provisioning VPN users
+- [Connect to the VPN](https://docs.duplocloud.com/docs/automation-platform/overview-2/prerequisites/connect-to-the-vpn.md): Connect to the DuploCloud VPN with the OpenVPN client
+- [Managed Identity Setup](https://docs.duplocloud.com/docs/automation-platform/overview-2/prerequisites/managed-identity-setup.md): Configure managed identity for the DuploCloud Portal in Azure.
+- [Azure Quick Start](https://docs.duplocloud.com/docs/automation-platform/overview-2/quick-start.md): Get up and running with DuploCloud running inside a Microsoft Azure cloud environment; harness the power of generating application infrastructures.
+- [Step 1: Create Infrastructure and Plan](https://docs.duplocloud.com/docs/automation-platform/overview-2/quick-start/step-1-infrastructure.md): Creating the DuploCloud Infrastructure and a Plan
+- [Step 2: Create a Tenant](https://docs.duplocloud.com/docs/automation-platform/overview-2/quick-start/step-2-tenant.md): Creating a DuploCloud Tenant that segregates your workloads
+- [Step 3: Create Agent Pools](https://docs.duplocloud.com/docs/automation-platform/overview-2/quick-start/step-3-create-azure-agent-pool.md): Creating Azure Agent Pools as shared resources across Tenants
+- [Step 4: Create a Service](https://docs.duplocloud.com/docs/automation-platform/overview-2/quick-start/step-4-create-app-via-k8s.md): Create a DuploCloud Service for application deployment
+- [Step 5: Create a Load Balancer](https://docs.duplocloud.com/docs/automation-platform/overview-2/quick-start/step-5-create-a-load-balancer.md): Create a Load Balancer to access your application
+- [Step 6: Test the Application](https://docs.duplocloud.com/docs/automation-platform/overview-2/quick-start/step-6-test-the-application.md): Test the application to ensure you get the results you expect
+- [Azure Use Cases](https://docs.duplocloud.com/docs/automation-platform/overview-2/use-cases.md): Use Cases supported for DuploCloud Azure
+- [Creating an Infrastructure and Plan for Azure](https://docs.duplocloud.com/docs/automation-platform/overview-2/use-cases/infrastructure-and-plan.md)
+- [AKS initial setup](https://docs.duplocloud.com/docs/automation-platform/overview-2/use-cases/infrastructure-and-plan/aks-initial-setup.md): Enable Azure Kubernetes Service (AKS) to connect with Azure
+- [Kubectl token and config](https://docs.duplocloud.com/docs/automation-platform/overview-2/use-cases/infrastructure-and-plan/kubectl-token-and-config.md): Connect to the Cluster namespace using the kubectl token.
+- [Encrypted storage account](https://docs.duplocloud.com/docs/automation-platform/overview-2/use-cases/infrastructure-and-plan/encrypted-storage-account.md): Encrypt an Azure storage account
+- [Upgrading the AKS version](https://docs.duplocloud.com/docs/automation-platform/overview-2/use-cases/infrastructure-and-plan/upgrading-the-aks-version.md): Upgrade the Azure Kubernetes Service (AKS) version
+- [Creating a Tenant (Environment)](https://docs.duplocloud.com/docs/automation-platform/overview-2/use-cases/tenant-environment.md): Using DuploCloud Tenants for Azure
+- [Tenant expiry](https://docs.duplocloud.com/docs/automation-platform/overview-2/use-cases/tenant-environment/tenant-expiry.md): Manage Tenant expiry settings in the DuploCloud Portal
+- [Tenant Config settings](https://docs.duplocloud.com/docs/automation-platform/overview-2/use-cases/tenant-environment/tenant-config-settings.md): Configure settings for all new Tenants under a Plan
+- [Hosts (VMs)](https://docs.duplocloud.com/docs/automation-platform/overview-2/use-cases/hosts-vms.md): Using Hosts in DuploCloud
+- [Autoscaling for Hosts](https://docs.duplocloud.com/docs/automation-platform/overview-2/use-cases/hosts-vms/autoscaling.md): Autoscaling with Azure Agent Pools and Kubernetes
+- [Autoscaling Azure Agent Pools](https://docs.duplocloud.com/docs/automation-platform/overview-2/use-cases/hosts-vms/autoscaling/autoscaling-azure-agent-pools.md): Dynamically configure Azure agent pools for optimum performance
+- [Shared Hosts](https://docs.duplocloud.com/docs/automation-platform/overview-2/use-cases/hosts-vms/shared-hosts.md)
+- [Availability Sets](https://docs.duplocloud.com/docs/automation-platform/overview-2/use-cases/hosts-vms/availability-sets.md): Configure Azure Availability Sets in DuploCloud
+- [Snapshots](https://docs.duplocloud.com/docs/automation-platform/overview-2/use-cases/hosts-vms/backups.md): Backup your hosts (VMs)
+- [Logs](https://docs.duplocloud.com/docs/automation-platform/overview-2/use-cases/logs.md)
+- [Metrics](https://docs.duplocloud.com/docs/automation-platform/overview-2/use-cases/metrics.md)
+- [Faults and alerts](https://docs.duplocloud.com/docs/automation-platform/overview-2/use-cases/faults-and-alerting.md): Checking Faults and Alerts in the DuploCloud Portal
+- [Alert notifications](https://docs.duplocloud.com/docs/automation-platform/overview-2/use-cases/faults-and-alerting/alert-notifications.md)
+- [Azure Maintenance Schedules](https://docs.duplocloud.com/docs/automation-platform/overview-2/use-cases/azure-maintenance-schedules.md): Manage Azure maintenance schedules from the DuploCloud Portal
+- [Azure Portal link](https://docs.duplocloud.com/docs/automation-platform/overview-2/use-cases/azure-portal-link.md): Create a link to the Azure Portal from DuploCloud
+- [Azure Billing and Cost Management](https://docs.duplocloud.com/docs/automation-platform/overview-2/use-cases/billing-and-cost-management.md): Manage billing and costs for Azure resources
+- [Enabling Azure Billing Data](https://docs.duplocloud.com/docs/automation-platform/overview-2/use-cases/billing-and-cost-management/enable-billing-data.md): Grant AIM permissions to view billing data in Azure
+- [Viewing and Monitoring Azure Billing Data](https://docs.duplocloud.com/docs/automation-platform/overview-2/use-cases/billing-and-cost-management/cost-management.md): View billing data and create billing alerts for Azure billing data
+- [Azure Services](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services.md): Managing Azure services and related components
+- [Containers and Services](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/containers-and-services.md): Using containers and DuploCloud Services with Azure AKS
+- [AKS Containers and Services](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/containers-and-services/aks-containers-and-services.md): Creating and managing AKS Services and containers
+- [Allocation Tagging](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/containers-and-services/aks-containers-and-services/creating-advanced-functions.md): Pin a container to a set of hosts using allocation tagging
+- [Docker Registry Credentials](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/containers-and-services/docker-registry-credentials.md): Set Docker registry credentials
+- [Container Rollback](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/containers-and-services/container-rollback.md): Roll back a container image for Kubernetes or Docker Services
+- [Passing Configs and Secrets](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/containers-and-services/passing-config-and-secrets.md): Configuration and Secret management in Azure
+- [Load Balancers](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/load-balancers.md): Add and configure Load Balancers with DuploCloud Azure
+- [Agent Pools](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/agent-pool.md): Meet performance demand in AKS workloads by organizing Azure agents into agent pools
+- [Spot Instances for AKS Agent Pools](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/agent-pool/spot-instances-for-aks-agent-pools.md): Configure AKS Agent pools and Services to use spot instances in the DuploCloud platform
+- [Azure Container Apps](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/azure-container-apps.md): Create and manage Azure Container Apps and their environments within DuploCloud
+- [Azure Container Registry (ACR)](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/azure-container-registry-acr.md): Using Azure Container Registry for storage with DuploCloud
+- [Databases](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/databases.md): Databases supported by DuploCloud Azure
+- [Microsoft SQL Server (MSSQL)](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/databases/sql-database.md): Create a Microsoft SQL (MSSQL) Server database in DuploCloud
+- [PostgreSQL database](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/databases/postgresql.md): Create a PostgreSQL database instance in DuploCloud
+- [PostgreSQL Flexible Server](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/databases/postgresql-flexible-server.md): Create a PostgreSQL Flexible Server database instance in DuploCloud
+- [MySQL Server database](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/databases/mysql-server-database.md): Create a MySQL Server single server database in DuploCloud
+- [Azure Managed SQL Instances](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/databases/mysql-server-database/azure-managed-instance.md): Create an Azure Managed SQL Instances in DuploCloud
+- [MySQL Flexible Server](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/databases/mysql-flexible-server.md): Create a MySQL Flexible Server database service in DuploCloud
+- [Redis database](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/databases/redis-database.md): Create a Redis database in DuploCloud
+- [CosmosDB](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/databases/cosmosdb.md): Provision and manage Azure CosmosDB accounts and databases in DuploCloud
+- [Databricks](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/databricks.md): Configuring Azure Databricks in DuploCloud
+- [Data Factory](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/data-factory.md): Configuring Azure Data Factory in DuploCloud
+- [Docker Web Application](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/docker-web-application.md)
+- [Infra Secrets](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/infra-secrets.md): Create Infra Secrets to use with DuploCloud
+- [Key Vault](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/key-vault.md): Configure Azure Key Vault with DuploCloud for secure secret storage
+- [Public IP Address Prefix](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/public-ip-address-prefix.md): Use a Public IP Address to reserve a range of consecutive public IPs
+- [Serverless](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/web-applications.md): Integrate and manage Azure Serverless services with DuploCloud
+- [App Service Plans and Web Apps](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/web-applications/app-service-plans-and-web-apps.md): Provisioning Azure App Service Plans from the DuploCloud Portal
+- [Function Apps](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/web-applications/functions.md): Using Azure Function Apps in DuploCloud
+- [Service Bus](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/service-bus.md): Create an Azure Service Bus in the DuploCloud Portal
+- [Storage Account](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/storage-account.md)
+- [Subscription](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/subscription.md): Add Azure subscription details
+- [VM Scale Sets](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-services/vm-scale-sets.md): Using VM Scale Sets to improve performance and redundancy for hosts
+- [Azure FAQ](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-faq.md)
+- [Azure Systems Settings](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-systems-settings.md): Configure Security settings in the DuploCloud UI for Azure users
+- [Azure Infrastructure Settings](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-systems-settings/azure-infrastructure-settings.md): Configure Infrastructure settings in the DuploCloud UI for Azure users
+- [Azure Tenant Settings](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-systems-settings/azure-tenant-settings.md): Configure Tenant settings in the DuploCloud UI for Azure users
+- [Azure Security Standards](https://docs.duplocloud.com/docs/automation-platform/overview-2/azure-security-standards.md): Monitor Azure Security Standard compliance in the DuploCloud Platform
+- [Azure Security Settings](https://docs.duplocloud.com/docs/automation-platform/overview-2/security-configuration.md): Configure Security settings in the DuploCloud UI for Azure users
+- [Tenant Security Settings](https://docs.duplocloud.com/docs/automation-platform/overview-2/security-configuration/tenant-settings.md): Configure Tenant Security settings for specific DuploCloud Tenants
+- [Kubernetes User Guide](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview.md): Kubernetes features in the DuploCloud Portal
+- [Kubernetes Quick Start](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/kubernetes-quick-start.md)
+- [Kubectl](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/kubectl.md): Using Kubectl with DuploCloud for AWS, GCP, and Azure users
+- [Local Kubectl Setup](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/kubectl/kubectl-setup.md): Setup kubectl and kubeconfig on your local computer
+- [Kubectl Shell](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/kubectl/kubectl-setup/kubectl-shell.md): Gain access to the KubeCtl Shell while using the DuploCloud Portal
+- [Kubectl Shell](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/kubectl/kubectl-shell.md): Configure and access the kubectl shell from within the DuploCloud Portal
+- [Enable Kubectl Shell for GKE](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/kubectl/kubectl-shell/enable-kubectl-shell-for-gke.md): Configure the kubectl shell for for DuploCloud-managed GKE deployments
+- [Enable Kubectl Shell for AKS](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/kubectl/kubectl-shell/enable-kubectl-shell-for-aks.md): Configure the kubectl shell for for DuploCloud-managed AKS deployments
+- [Kubectl Tokens and Access Management](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/kubectl/kubectl-token.md): Set up KubeCtl within the DuploCloud Portal by downloading the token and configuring Mirantis Lens for DuploCloud authentication.
+- [Read-only Access in Kubernetes](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/kubectl/read-only-access-in-kubernetes.md): Configure read-only access to your Kubernetes cluster in DuploCloud
+- [Mirantis Lens](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/kubectl/mirantis-lens.md): Integrate Mirantis Lens with DuploCloud
+- [Viewing Kubernetes Apps](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/viewing-kubernetes-apps.md)
+- [Configs and Secrets](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/configs-and-secrets.md): Set, mount, and manage Kubernetes ConfigMaps and Kubernetes Secrets in DuploCloud environments.
+- [Setting Kubernetes Secrets](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/configs-and-secrets/setting-kubernetes-secrets.md): Set and manage Kubernetes Secrets in the DuploCloud Portal, including troubleshooting format issues.
+- [Backing Up and Restoring Kubernetes Secrets and ConfigMaps](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/configs-and-secrets/backing-up-and-restoring-kubernetes-secrets-and-configmaps.md): Configuring backups for Kubernetes Secrets and ConfigMaps
+- [Creating a Kubernetes ConfigMap](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/configs-and-secrets/creating-a-kubernetes-configmap.md): Create Kubernetes ConfigMaps to store non-sensitive information with DuploCloud
+- [Setting Environment Variables (EVs) from a ConfigMap or Secret](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/configs-and-secrets/setting-environment-variables-from-config.md): Set EVs from the Kubernetes ConfigMap
+- [Mounting ConfigMaps and Secrets as files](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/configs-and-secrets/mounting-config-as-files.md): Mounting application configuration maps and secrets as files
+- [Using Kubernetes Secrets with Azure Storage connection data](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/configs-and-secrets/using-kubernetes-secrets-with-azure-storage-connection-data.md): Using K8s Secrets with Azure Storage Accounts
+- [Creating the SecretProviderClass Custom Resource to mount secrets](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/configs-and-secrets/adding-secretproviderclass-custom-resource.md): Creating K8s SecretProviderClass CRs in the DuploCloud Portal
+- [Managing Secrets and ConfigMaps access for readonly users (AWS and GCP)](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/configs-and-secrets/managing-secret-access-for-read-only-users-aws-and-gcp.md): Restrict or enable readonly access to Kubernetes Secrets and ConfigMap for AWS or GCP users.
+- [Jobs](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/jobs.md): Create Kubernetes Jobs in AWS and GCP from the DuploCloud Portal
+- [CronJobs](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/cronjobs.md): Schedule a Kubernetes Job in AWS and GCP by creating a Kubernetes CronJob in the DuploCloud Portal
+- [DaemonSet](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/daemonset.md): Add a DaemonSet for your AWS or GCP Services in DuploCloud
+- [Helm](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/helm.md): Deploy and manage Kubernetes applications using Helm charts and OCI repositories
+- [Helm Charts](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/helm/helm-charts.md): Deploy Kubernetes applications using Helm charts from standard or OCI repositories
+- [OCI Helm Repositories](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/helm/oci-helm-repositories.md): Manage and deploy Helm charts stored in OCI-compliant registries
+- [Ingress Loadbalancer](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/ingress-loadbalancer.md)
+- [EKS Ingress](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/ingress-loadbalancer/adding-ingress.md): Set up Kubernetes Ingress and Load Balancer with K8s NodePort
+- [GKE Ingress](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/ingress-loadbalancer/gke-ingress.md): Adding an Ingress for DuploCloud Google Cloud Platform Load Balancers
+- [AKS Shared Application Gateway](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/ingress-loadbalancer/aks-ingress.md): Application Routing with Shared Application Gateway (AKS)
+- [Using an Azure Application Gateway SSL policy with Ingress](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/ingress-loadbalancer/aks-ingress/using-an-azure-application-gateway-ssl-policy-with-ingress.md)
+- [InitContainers and Sidecar Containers](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/initcontainers-and-sidecar-containers.md): Use InitContainers and Sidecar Containers with DuploCloud
+- [HPA](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/hpa.md): Manage and troubleshooting services with HPA configured.
+- [Node Pools](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/node-pools.md): Provisioning and Managing Kubernetes Node Pools in DuploCloud
+- [Pod Toleration](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/pod-toleration.md): Support for specifying Kubernetes YAML for Pod Toleration
+- [Probes and Health Check](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/setting-up-probes.md): Support for Kubernetes Probes
+- [Kubernetes Lifecycle Hooks](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/kubernetes-lifecycle-hooks.md): Implementing Kubernetes Lifecycle Hooks in DuploCloud
+- [Kubernetes StorageClass and PVC](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/kubernetes-storageclass-and-pvc.md): Creating K8s PVCs and StorageClass constructs in the DuploCloud Portal
+- [Native Azure Storage Classes](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/kubernetes-storageclass-and-pvc/storage-options.md): Use Azure's built-in Kubernetes StorageClass constructs
+- [Import an External Kubernetes Cluster](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/import-an-external-kubernetes-cluster.md): Import an external or On-Prem cluster to be managed by DuploCloud
+- [Managed Service Accounts (RBAC)](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/managed-service-accounts-rbac.md): For Kubernetes Power Users: Information about the service accounts created by DuploCloud
+- [Create a Diagnostics Application Service](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/create-a-diagnostics-application-service.md): Create a Diagnostics Application Service in DuploCloud
+- [ResourceQuotas](https://docs.duplocloud.com/docs/automation-platform/kubernetes-overview/resourcequotas.md): Manage Kubernetes ResourceQuotas for DuploCloud Tenants
+- [Security and Compliance](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance.md): An Overview of Security and Compliance features in the DuploCloud Portal
+- [Control Groups](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/control-groups.md): The building blocks of a secure and compliance Cloud infrastructure
+- [Isolation and Firewall](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control.md): An overview of the security constructs ensuring isolation in the DuploCloud environment
+- [Cloud Account](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control/cloud-account.md): How the Cloud Account provides the maximum level of isolation
+- [Network Segmentation](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control/add-edit-or-delete-a-user.md): Create, edit, view, or delete users and assign appropriate roles
+- [IAM](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control/iam.md): The DuploCloud Tenant as an IAM boundary
+- [Security Groups](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control/security-groups.md): DuploCloud Tenants and Security Groups
+- [VPN](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control/vpn.md): OpenVPN in DuploCloud
+- [WAF](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control/waf.md): Web Application Firewall (WAF) in DuploCloud
+- [Access Management](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-2.md): Just-In-Time access to cloud resources in the DuploCloud Portal
+- [Authentication Methods](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-2/application-environment.md): Authentication methods supported by the DuploCloud Platform
+- [Cloud Console, API and CLI](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-2/cloud-console-api-and-cli.md): Types of access managed by the DuploCloud Platform
+- [VM SSH](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-2/vm-ssh.md): SSH access to Hosts in the DuploCloud Platform
+- [Container Shell](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-2/container-shell.md): Access to the container shell in the DuploCloud Portal
+- [Kubernetes Access](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-2/kubernetes-access.md): Access Kubernetes constructs directly in the DuploCloud platform
+- [Permission Sets](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-2/permission-sets.md): Configure Permission Sets in DuploCloud for granular access control
+- [Tenant Security Rules for VPN Access](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-2/add-tenant-access-over-a-vpn.md): Grant tenant-specific access to resources over a VPN
+- [Database Access for Users](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-2/database-access-for-users.md): Grant access to specific databases for DuploCloud users
+- [Cross-Tenant Resource Sharing](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-2/cross-tenant-access.md): Allow multiple Tenants access to the same resources
+- [Encryption](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-1.md): Encryption support in DuploCloud
+- [At Rest Encryption](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-1/at-rest-encryption.md): At Rest encryption support in DuploCloud
+- [KMS Keys](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-1/at-rest-encryption/kms-keys.md): Use KMS keys for resource encryption
+- [In Transit encryption](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-1/in-transit-encryption.md): In Transit encryption support in DuploCloud
+- [Tags and Label](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/tags-and-label.md): Tagging and Labelling to ensure adherence to security and compliance standards
+- [Security Monitoring](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-3.md): Ensuring Security of cloud assets using the DuploCloud Portal
+- [Agent Management](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-3/agent-management.md): Setup and management of agents such as OSSEC, ClamAV for anti-virus, CrowdStrike, and so forth
+- [SIEM](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-3/siem.md): Security Incident and Event Management (SIEM) in DuploCloud
+- [Vulnerabilities](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-3/vulnerabilities.md): Detect security vulnerabilities in Hosts in he DuploCloud Portal
+- [Hardening Standards (CIS)](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-3/hardening-standards-cis.md): CIS benchmark monitoring using Wazuh and Ossec for Hosts
+- [File Integrity Monitoring](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-3/file-integrity-monitoring.md): Monitoring file integrity using the DuploCloud Platform
+- [Access Monitoring](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-3/access-monitoring.md): Security Events monitoring in the DuploCloud Platform
+- [HIDS](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-3/hids.md): Host Intrusion Detection System (HIDS) in the DuploCloud Portal
+- [NIDS](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-3/nids.md): Network Intrusion Detection System (NIDS) in the DuploCloud Portal
+- [Inventory Monitoring](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-3/inventory.md): Inventory monitoring in the DuploCloud Portal
+- [Antivirus](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-3/anti-virus.md): Antivirus protection in the SIEM dashboard of the DuploCloud Portal
+- [VAPT (Pen Test)](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-3/vapt-pen-test.md): Vulnerability and Penetration Testing (VAPT) or Pen Test in the DuploCloud Platform
+- [AWS Security HUB](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-3/aws-security-hub.md)
+- [Alerting and Event Management](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-3/alerting-and-event-management.md)
+- [Compliance Frameworks](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/access-control-4.md): Compliance frameworks supported by DuploCloud
+- [GRC Tools and DuploCloud](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/grc-tools-and-duplocloud.md): An explanation of how DuploCloud and GRC tools work together
+- [Security and Compliance Workflow](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/security-and-compliance-workflow.md): An outline of a Compliance Project workflow
+- [Compliance Reports](https://docs.duplocloud.com/docs/automation-platform/security-and-compliance/compliance-reports.md): Access compliance reports directly from the DuploCloud Portal
+- [Terraform User Guide](https://docs.duplocloud.com/docs/automation-platform/terraform-support.md): Information about working with DuploCloud's Terraform provider
+- [DuploCloud Terraform Provider](https://docs.duplocloud.com/docs/automation-platform/terraform-support/duplocloud-terraform-provider.md): Using DuploCloud exclusive Terraform provider
+- [DuploCloud Terraform Exporter](https://docs.duplocloud.com/docs/automation-platform/terraform-support/duplocloud-terraform-exporter.md)
+- [Install Terraform Exporter](https://docs.duplocloud.com/docs/automation-platform/terraform-support/duplocloud-terraform-exporter/install-terraform-exporter.md)
+- [Generate Terraform](https://docs.duplocloud.com/docs/automation-platform/terraform-support/duplocloud-terraform-exporter/generate-terraform.md)
+- [Using Generated Code](https://docs.duplocloud.com/docs/automation-platform/terraform-support/duplocloud-terraform-exporter/using-generated-code.md)
+- [Troubleshooting Guide](https://docs.duplocloud.com/docs/automation-platform/terraform-support/duplocloud-terraform-exporter/troubleshooting-guide.md)
+- [Terraform FAQ](https://docs.duplocloud.com/docs/automation-platform/terraform-support/terraform-faq.md)
+- [Pulumi User Guide](https://docs.duplocloud.com/docs/automation-platform/pulumi-user-guide.md): Information about working with DuploCloud's Pulumi provider
+- [Getting Started with Pulumi for DuploCloud](https://docs.duplocloud.com/docs/automation-platform/pulumi-user-guide/getting-started-with-pulumi-for-duplocloud.md): Set up Pulumi to manage infrastructure using the DuploCloud provider
+- [Deploying a Complete DuploCloud Stack with Pulumi](https://docs.duplocloud.com/docs/automation-platform/pulumi-user-guide/deploying-a-complete-duplocloud-stack-with-pulumi.md): Deploy a full DuploCloud infrastructure stack using Pulumi
+- [Automation and Tools](https://docs.duplocloud.com/docs/automation-platform/automation-and-tools.md): Access the CLI for DuploCloud and leverage third-party integrations to boost DevOps automation
+- [DuploCtl CLI](https://docs.duplocloud.com/docs/automation-platform/automation-and-tools/duploctl.md): Using the DuploCloud CLI locally and in CI/CD pipelines
+- [Supported 3rd Party Tools](https://docs.duplocloud.com/docs/automation-platform/automation-and-tools/supported-third-party-tools.md): An overview of third-party tools DuploCloud supports and the functionalities they provide
+- [Automation Stacks](https://docs.duplocloud.com/docs/automation-platform/automation-and-tools/automation-stacks.md): An outline of DuploCloud's Stacks feature for replicating, customizing, and managing resources
+- [Clone from a Tenant](https://docs.duplocloud.com/docs/automation-platform/automation-and-tools/automation-stacks/clone-from-a-tenant.md): Clone resources from one Tenant to another using the DuploCloud Stacks feature
+- [Create a deploy template](https://docs.duplocloud.com/docs/automation-platform/automation-and-tools/automation-stacks/create-a-deploy-template.md): Create a re-usable template to deploy resources using the DuploCloud Stacks feature.
+- [Deploy from a template](https://docs.duplocloud.com/docs/automation-platform/automation-and-tools/automation-stacks/deploy-from-a-template.md): Deploy resources to Tenants using templates with DuploCloud Stacks
+- [Customize deploy templates](https://docs.duplocloud.com/docs/automation-platform/automation-and-tools/automation-stacks/customize-deploy-templates.md): Define custom input parameters and use built-in substitution keys to enhance Stacks deploy templates
+- [Scheduler](https://docs.duplocloud.com/docs/automation-platform/automation-and-tools/scheduler.md): Configure scheduled shutdowns for Tenant resources using the Scheduler.
+- [CI/CD Overview](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd.md): Ensuring continuous integration, delivery, and deployment of your Cloud applications
+- [Service Accounts](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/service-accounts.md): Setting up a dedicated service account for your CI/CD tool to access Duplocloud and the underlying cloud.
+- [GitHub Actions](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/github-actions.md): CI/CD using GitHub Actions
+- [Configure GitHub](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/github-actions/configuring-github.md): This section discusses how you can configure Github to integrate with Duplo
+- [Build a Docker image](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/github-actions/build-a-docker-image.md): Use DuploCloud to build and push a Docker image from GitHub Actions
+- [Update a Kubernetes Service](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/github-actions/update-a-service.md): Use Duplo to update a Service container from Github Actions
+- [Update an ECS Service](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/github-actions/update-a-service-1.md): Use Duplo to update a Service container from Github Actions
+- [Update a Lambda function](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/github-actions/update-a-lambda-function.md): Use GitHub Actions to deploy a Lambda Image or S3 bucket update
+- [Update CloudFront](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/github-actions/update-cloudfront.md): Use DuploCloud to update your CloudFront from Github Actions
+- [Upload to S3 bucket](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/github-actions/upload-to-s3.md): Use DuploCloud to upload to S3 from Github Actions
+- [Self-Hosted Runners](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/github-actions/self-hosted-runners.md): Run GitHub Actions with self-hosted runners in DuploCloud
+- [Execute Terraform](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/github-actions/execute-terraform.md): How to setup and apply Terraform stacks with GitHub Actions.
+- [CircleCI](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/circleci.md): CI/CD using CircleCI
+- [Configure CircleCI](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/circleci/configure-circleci.md)
+- [Build and Push Docker Image](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/circleci/build-and-push-docker-image.md)
+- [Update Service](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/circleci/update-service.md)
+- [GitLab CI/CD](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/gitlab-ci-cd.md): CI/CD using GitLab
+- [Configure Gitlab](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/gitlab-ci-cd/configuring-github.md): This section discusses how you can configure Gitlab to integrate with Duplo
+- [Build a Docker image](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/gitlab-ci-cd/build-a-docker-image.md): Use Duplo to build and push a docker image from Gitlab CI/CD
+- [Update a service](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/gitlab-ci-cd/update-a-service.md): Use Duplo to update a service's container from Gitlab CI/CD
+- [Bitbucket Pipelines](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/bitbucket-pipelines.md): CI/CD using Bitbucket Pipelines
+- [Configure Bitbucket](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/bitbucket-pipelines/configure-bitbucket.md): Setup Bitbucket Pipelines for use with DuploCloud.
+- [Build a Docker image](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/bitbucket-pipelines/build-a-docker-image.md): Building images with Bitbucket Pipelines
+- [Update the Service with Deploy Pipe](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/bitbucket-pipelines/update-the-service-with-deploy-pipe.md): Update images with DuploCloud's BitBucket Deploy Pipe
+- [Azure Pipelines](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/azure-pipelines.md): CI/CD using Azure Pipelines
+- [Configure Azure DevOps](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/azure-pipelines/configure-azure-devops.md): This section discusses how you can configure Azure DevOps to integrate with DuploCloud.
+- [Build a Docker image from Azure DevOps](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/azure-pipelines/build-a-docker-image-from-azure-devops.md): Build and push a Docker image from Azure DevOps to the AWS Elastic Container Registry (ECR)
+- [Update a Service](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/azure-pipelines/update-a-service.md): Update the container image used by a DuploCloud Service
+- [Troubleshooting](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/azure-pipelines/troubleshooting.md)
+- [Katkit](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/katkit.md): CI/CD using Katkit
+- [Environments](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/katkit/environments.md)
+- [Link repository](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/katkit/link-repository.md)
+- [Phases](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/katkit/phases.md)
+- [Katkit config](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/katkit/katkit-config.md)
+- [Advanced functions](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/katkit/advanced-functions.md)
+- [ArgoCD](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/argocd.md): Deploy Argo CD in a DuploCloud-managed Infrastructure
+- [Argo Workflows](https://docs.duplocloud.com/docs/automation-platform/introduction-to-ci-cd/argo-workflows.md)
+- [User Administration](https://docs.duplocloud.com/docs/automation-platform/access-control.md): Tools for Administrators in the DuploCloud Portal
+- [Setting Tenant Topbar Color](https://docs.duplocloud.com/docs/automation-platform/access-control/setting-tenant-topbar-color.md): Customize the Tenant Topbar color in the DuploCloud Portal
+- [User Authentication](https://docs.duplocloud.com/docs/automation-platform/access-control/user-authentication.md)
+- [User Logins](https://docs.duplocloud.com/docs/automation-platform/access-control/user-authentication/user-logins.md): Logins supported by DuploCloud
+- [SSO Configuration](https://docs.duplocloud.com/docs/automation-platform/access-control/user-authentication/sso-configuration.md): Configure Single Sign-On for DuploCloud
+- [Microsoft Entra ID SSO Configuration](https://docs.duplocloud.com/docs/automation-platform/access-control/user-authentication/sso-configuration/azure-ad-as-idp.md): Set up Single Sign-On for DuploCloud using Microsoft Entra ID (formerly Azure AD) as your identity provider
+- [Okta Management Settings](https://docs.duplocloud.com/docs/automation-platform/access-control/user-authentication/sso-configuration/okta-management-settings.md): Configure Okta management settings from the DuploCloud Portal
+- [Multiple Portal Login Options](https://docs.duplocloud.com/docs/automation-platform/access-control/user-authentication/multiple-portal-login-options.md): Adding multiple DuploCloud Portals to the Main DuploCloud Login Screen
+- [Login Screen Customization](https://docs.duplocloud.com/docs/automation-platform/access-control/user-authentication/login-banner-customization.md): Customize or update the text on your DuploCloud login screen banner or button
+- [User Access & Permissions](https://docs.duplocloud.com/docs/automation-platform/access-control/user-access-and-permissions.md)
+- [User Access to DuploCloud](https://docs.duplocloud.com/docs/automation-platform/access-control/user-access-and-permissions/add-edit-or-delete-a-user.md): Create, edit, view, or delete users and assign appropriate roles
+- [VPN Access for Users](https://docs.duplocloud.com/docs/automation-platform/access-control/user-access-and-permissions/add-and-delete-vpn-access-for-users.md): Manage VPN access for users
+- [Tenant Access for Users](https://docs.duplocloud.com/docs/automation-platform/access-control/user-access-and-permissions/tenant-access.md)
+- [Give a User Tenant Access](https://docs.duplocloud.com/docs/automation-platform/access-control/user-access-and-permissions/tenant-access/give-a-user-tenant-access.md): Give a user access to specific Tenant(s)
+- [Read-Only Access to a Tenant](https://docs.duplocloud.com/docs/automation-platform/access-control/user-access-and-permissions/tenant-access/read-only-access-to-a-tenant.md): Limit a user's access to a Tenant to read-only
+- [User Email Notifications](https://docs.duplocloud.com/docs/automation-platform/access-control/user-access-and-permissions/user-email-notifications.md): Configure new-user email notifications in DuploCloud
+- [API & Session Management](https://docs.duplocloud.com/docs/automation-platform/access-control/api-and-session-management.md)
+- [API Tokens](https://docs.duplocloud.com/docs/automation-platform/access-control/api-and-session-management/api-tokens.md): Create temporary and permanent API Tokens
+- [Session Timeout](https://docs.duplocloud.com/docs/automation-platform/access-control/api-and-session-management/session-timeout.md): Configure session timeout for DuploCloud users
+- [Observability](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview.md): Continuous monitoring of your cloud infrastructure in the DuploCloud Portal
+- [Standard Observability Suite](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/standard-observability-suite.md): The suite included in the DuploCloud platform
+- [Setup](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/standard-observability-suite/setup.md): Setting up the Standard Observability Suite in DuploCloud
+- [Logging Setup](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/standard-observability-suite/setup/logging-setup.md): Setting up Logging in the DuploCloud Portal
+- [Custom Kibana Logging URL](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/standard-observability-suite/setup/logging-setup/custom-kibana-logging-url.md): Configure a custom Kibana URL for viewing Logging data from DuploCloud
+- [Metrics Setup](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/standard-observability-suite/setup/metrics-setup.md): Enabling Metrics collection for centralized monitoring and select Tenants
+- [Auditing](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/standard-observability-suite/setup/auditing.md): Setting up Auditing in the DuploCloud Portal Standard Observability Suite
+- [Custom Kibana Audit URL](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/standard-observability-suite/setup/auditing/custom-kibana-audit-url.md): Configure a custom Kibana URL for viewing audit logs from DuploCloud
+- [Logs](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/standard-observability-suite/logs.md): Logging in the DuploCloud Standard Observability Suite utilizing OpenSearch and Kibana
+- [Metrics](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/standard-observability-suite/metrics-dashboard.md): Comprehensive metrics at a glance using the DuploCloud Standard Observability Suite
+- [Advanced Observability Suite](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/advanced-observability-suite.md): DuploCloud's Advanced Observability Suite Add-on
+- [Architecture](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/advanced-observability-suite/architecture.md): How the Advanced Observability Suite and OpenTelemetry integrate with DuploCloud
+- [Dashboards](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/advanced-observability-suite/dashboards.md): Working with the Advanced Observability Suite (AOS) dashboards in DuploCloud
+- [Administrator Dashboard](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/advanced-observability-suite/dashboards/administrator-dashboard.md): Working with the AOS Administrator Dashboard
+- [Tenant Dashboard](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/advanced-observability-suite/dashboards/tenant-dashboard.md): Working with the AOS Tenant Dashboard
+- [Customizing Dashboards](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/advanced-observability-suite/dashboards/customizing-dashboards.md): Customize DuploCloud Advanced Observability Suite (AOS) Dashboards
+- [Logging with Loki](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/advanced-observability-suite/logging-with-loki.md): Get Logging insights in DuploCloud's Advanced Observability Suite (AOS)
+- [Metrics with Mimir](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/advanced-observability-suite/metrics-with-mimir.md): Exploring metrics in the DuploCloud Advanced Observability Suite (AOS)
+- [Tracing with Tempo](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/advanced-observability-suite/tracing-with-tempo.md): Exploring traces in the DuploCloud Advanced Observability Suite (AOS)
+- [Profiles with Pyroscope](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/advanced-observability-suite/profiles-with-pyroscope.md): Using profiles with Pyroscope in the DuploCloud Advanced Observability Suite (AOS)
+- [Alerts with Alert Manager](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/advanced-observability-suite/alerts-with-alert-manager.md): Configure alerts with Grafana's native Alert manager for DuploCloud's AOS
+- [Service Level Objectives (SLOs)](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/advanced-observability-suite/service-level-objectives-slos.md): Using Service Level Objectives (SLOs) in the DuploCloud Advanced Observability Suite (AOS)
+- [OTEL Stack Resource Requirements](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/advanced-observability-suite/otel-stack-resource-requirements.md): Prerequisite resource requirements for deploying the DuploCloud OTEL stack
+- [Application Instrumentation](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/advanced-observability-suite/application-instrumentation.md): Instrument applications in DuploCloud using Grafana Beyla and OpenTelemetry
+- [Custom Metrics](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/advanced-observability-suite/custom-metrics.md): Configure custom metrics  for DuploCloud’s Advanced Observability Suite (AOS)
+- [Terraform](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/advanced-observability-suite/terraform.md): Automate Grafana resource creation and management using Terraform and DuploCloud.
+- [Faults and Alerts](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/faults-and-alarms.md): Viewing faults and alerts in the DuploCloud Portal
+- [Automatic alert creation](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/faults-and-alarms/automatic-alert-creation.md): Create and customize automatic alerts
+- [Alert notifications](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/faults-and-alarms/alerting-and-notifications.md): Enable and view alert notifications in the DuploCloud Portal
+- [Configuring Billing Alerts](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/configure-billing-alerts.md): Set up billing alerts to track cloud spending in DuploCloud
+- [Auditing](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/auditing.md): View Auditing reports and logs
+- [Web App Firewall (WAF)](https://docs.duplocloud.com/docs/automation-platform/diagnostics-overview/web-application-firewall-waf.md): Creating and Managing a Web Application Firewall (WAF)
+- [FAQs](https://docs.duplocloud.com/docs/automation-platform/faq.md): Popular and frequently asked questions about DuploCloud
+- [Solutions & How-Tos](https://docs.duplocloud.com/docs/automation-platform/faq/solutions-and-how-tos.md)
+- [Setting Up a Persistent Volume Using EFS](https://docs.duplocloud.com/docs/automation-platform/faq/solutions-and-how-tos/setting-up-a-persistent-volume-using-efs.md): How to set up a persistent volume using EFS
+- [Handling GitHub Deployment Errors Due to Expired DuploCloud Tokens](https://docs.duplocloud.com/docs/automation-platform/faq/solutions-and-how-tos/handling-github-deployment-errors-due-to-expired-duplocloud-tokens.md)
+- [Workshops](https://docs.duplocloud.com/docs/automation-platform/workshops.md): Hands-on workshops for learning how to use DuploCloud features on AWS now, GCP and Azure soon.
+- [DuploCloud 101 for AWS](https://docs.duplocloud.com/docs/automation-platform/workshops/duplocloud-101-for-aws.md): DuploCloud Workshop for AWS users
+- [Create Your Infrastructure and Application](https://docs.duplocloud.com/docs/automation-platform/workshops/duplocloud-101-for-aws/create-your-infrastructure-and-application.md): Creating an Infrastructure and deploying your application in the DuploCloud Portal
+- [1. Log in to the DuploCloud Portal](https://docs.duplocloud.com/docs/automation-platform/workshops/duplocloud-101-for-aws/create-your-infrastructure-and-application/1.-log-in-to-the-duplocloud-portal.md): Accessing the DuploCloud Portal using Microsoft or Google SSO
+- [2. Create a DuploCloud Infrastructure](https://docs.duplocloud.com/docs/automation-platform/workshops/duplocloud-101-for-aws/create-your-infrastructure-and-application/2.-create-a-duplocloud-infrastructure.md): Creating your infrastructure in the DuploCloud Portal
+- [3. Create a DuploCloud Tenant](https://docs.duplocloud.com/docs/automation-platform/workshops/duplocloud-101-for-aws/create-your-infrastructure-and-application/3.-create-a-duplocloud-tenant.md): Create a guardrail-enabled workspace called a Tenant
+- [5. Create an EKS Worker Node](https://docs.duplocloud.com/docs/automation-platform/workshops/duplocloud-101-for-aws/create-your-infrastructure-and-application/4.-create-an-eks-worker-node.md): Creating an EKS Worker Node by adding an EC2 Host in DuploCloud
+- [6. Deploy an Application](https://docs.duplocloud.com/docs/automation-platform/workshops/duplocloud-101-for-aws/create-your-infrastructure-and-application/5.-deploy-an-application.md): Using the DuploCloud Portal to deploy your application
+- [7. Create a Load Balancer](https://docs.duplocloud.com/docs/automation-platform/workshops/duplocloud-101-for-aws/create-your-infrastructure-and-application/6.-create-a-load-balancer.md): Creating a Load Balancer to expose your application to the web
+- [8. Deploy an S3 Bucket](https://docs.duplocloud.com/docs/automation-platform/workshops/duplocloud-101-for-aws/create-your-infrastructure-and-application/7.-deploy-an-s3-bucket.md): Deploy an S3 Bucket for easily accessible storage in the DuploCloud Portal
+- [9. Deploy a Database](https://docs.duplocloud.com/docs/automation-platform/workshops/duplocloud-101-for-aws/create-your-infrastructure-and-application/8.-deploy-a-database.md): Deploying a database in the DuploCloud Portal
+- [10. Create an Alarm](https://docs.duplocloud.com/docs/automation-platform/workshops/duplocloud-101-for-aws/create-your-infrastructure-and-application/9.-create-an-alarm.md): Creating an alarm in the DuploCloud Portal
+- [Daily Operations using DuploCloud](https://docs.duplocloud.com/docs/automation-platform/workshops/duplocloud-101-for-aws/daily-operations-using-duplocloud.md): An overview of the seamless day-to-day DevOps functionality that DuploCloud provides
+- [1. AI DevOps Platform](https://docs.duplocloud.com/docs/automation-platform/workshops/duplocloud-101-for-aws/daily-operations-using-duplocloud/1.-ai-devops-platform.md): Submit AI HelpDesk tickets in the DuploCloud Portal
+- [2. Host, Container, and Kubectl Shell](https://docs.duplocloud.com/docs/automation-platform/workshops/duplocloud-101-for-aws/daily-operations-using-duplocloud/1.-host-container-and-kubectl-shell.md): Access shells conveniently within the DuploCloud Portal
+- [3. Observability](https://docs.duplocloud.com/docs/automation-platform/workshops/duplocloud-101-for-aws/daily-operations-using-duplocloud/3.-observability.md): Monitoring your cloud infrastructure and applications.
+- [Standard Observability](https://docs.duplocloud.com/docs/automation-platform/workshops/duplocloud-101-for-aws/daily-operations-using-duplocloud/3.-observability/standard-observability.md): Viewing Standard logs, metrics, and resource health for your Services and Hosts.
+- [Advanced Observability Suite (AOS)](https://docs.duplocloud.com/docs/automation-platform/workshops/duplocloud-101-for-aws/daily-operations-using-duplocloud/3.-observability/advanced-observability-suite-aos.md): Viewing Observability data using DuploCloud's Advanced Observability Suite
+- [4. Audit Logs](https://docs.duplocloud.com/docs/automation-platform/workshops/duplocloud-101-for-aws/daily-operations-using-duplocloud/5.-audit-logs.md): Accessing Auditing and related events in the DuploCloud Portal
+- [5. Billing and Cost Management](https://docs.duplocloud.com/docs/automation-platform/workshops/duplocloud-101-for-aws/daily-operations-using-duplocloud/4.-billing-and-cost-management.md): Proactively managing your cloud costs with the DuploCloud Portal
+- [6. Tenant and Admin Just-In-Time (JIT) AWS Access](https://docs.duplocloud.com/docs/automation-platform/workshops/duplocloud-101-for-aws/daily-operations-using-duplocloud/6-tenant-and-admin-just-in-time-jit-aws-access.md): Using JIT to access the AWS Portal from DuploCloud
+- [7. CI/CD](https://docs.duplocloud.com/docs/automation-platform/workshops/duplocloud-101-for-aws/daily-operations-using-duplocloud/7.-ci-cd.md): Resources to use DuploCloud CI/CD and GitHub Actions
+- [8. Security Hub and Dashboard](https://docs.duplocloud.com/docs/automation-platform/workshops/duplocloud-101-for-aws/daily-operations-using-duplocloud/8.-security-hub-and-dashboard.md): Accessing the Security Incident and Event Management (SIEM) dashboard from the DuploCloud Portal
+- [9. Terraform Mode of Operations](https://docs.duplocloud.com/docs/automation-platform/workshops/duplocloud-101-for-aws/daily-operations-using-duplocloud/9.-terraform-mode-of-operations.md): Using the DuploCloud Terraform Provider
+- [Post-workshop Reference Guide](https://docs.duplocloud.com/docs/automation-platform/workshops/duplocloud-101-for-aws/post-workshop-reference-guide.md): Resources and links to aid you in exploring DuploCloud's many self-serve DevOps offerings
+- [Post-Workshop Testing and Documentation Links](https://docs.duplocloud.com/docs/automation-platform/workshops/duplocloud-101-for-aws/post-workshop-reference-guide/post-workshop-testing-and-documentation-links.md): Explore the DuploCloud product through the documentation set
+- [Connect With Us](https://docs.duplocloud.com/docs/automation-platform/workshops/duplocloud-101-for-aws/post-workshop-reference-guide/connect-with-us.md): Reach out with questions, demo requests, or for more information
+- [DuploCloud Whitepapers](https://docs.duplocloud.com/docs/automation-platform/workshops/duplocloud-101-for-aws/post-workshop-reference-guide/duplocloud-whitepapers.md): Whitepapers for in-depth looks at DuploCloud features
+- [DuploCloud Terraform Provider](https://docs.duplocloud.com/docs/automation-platform/workshops/duplocloud-101-for-aws/post-workshop-reference-guide/duplocloud-terraform-provider.md): Explore the capabilities and advantages of DuploCloud's exclusive Terraform Provider
+- [DuploCloud AWS Demo Video](https://docs.duplocloud.com/docs/automation-platform/workshops/duplocloud-101-for-aws/post-workshop-reference-guide/duplocloud-aws-demo-video.md): To recap what you've learned in the workshop, watch a quick demo of DuploCloud AWS
+- [Extras](https://docs.duplocloud.com/docs/automation-platform/extras-overview.md): Additional features of the DuploCloud Portal
+- [BYOH](https://docs.duplocloud.com/docs/automation-platform/extras-overview/byoh.md)
+- [Delegate Subdomains](https://docs.duplocloud.com/docs/automation-platform/extras-overview/delegate-subdomains.md): How to delegate subdomains to another Cloud Provider
+- [Deploying Helm Charts](https://docs.duplocloud.com/docs/automation-platform/extras-overview/helm-charts.md): Information for using Helm Charts with DuploCloud
+- [FluxCD](https://docs.duplocloud.com/docs/automation-platform/extras-overview/fluxcd.md): Use FluxCD with DuploCloud to synchronize your K8s clusters with code stored in Git
+- [Inventory](https://docs.duplocloud.com/docs/automation-platform/extras-overview/inventory.md): View all cloud resources in your environment on the DuploCloud Inventory page
+- [Setting up SCPs (Service Control Policies) for DuploCloud](https://docs.duplocloud.com/docs/automation-platform/extras-overview/setting-up-scps-service-control-policies-for-duplocloud.md): Use SCPs with DuploCloud to add guardrails to AWS organizational units
+- [Video Transcripts](https://docs.duplocloud.com/docs/automation-platform/extras-overview/video-transcripts.md): Learn more about Cloud Infrastructure and DevOps Automation using our video tutorials.
+- [DuploCloud AWS Product Demo](https://docs.duplocloud.com/docs/automation-platform/extras-overview/video-transcripts/duplocloud-aws-product-demo.md)
+- [DuploCloud Azure Product Demo](https://docs.duplocloud.com/docs/automation-platform/extras-overview/video-transcripts/duplocloud-azure-product-demo.md)
+- [DuploCloud GCP Product Demo](https://docs.duplocloud.com/docs/automation-platform/extras-overview/video-transcripts/duplocloud-gcp-product-demo.md)
+- [DevOps Deep Dive - Abstracting Cloud Complexity](https://docs.duplocloud.com/docs/automation-platform/extras-overview/video-transcripts/devops-deep-dive-abstracting-cloud-complexity.md)
+- [DuploCloud Uses Infrastructure-as-Code to Stitch Together DevOps Lifecycle](https://docs.duplocloud.com/docs/automation-platform/extras-overview/video-transcripts/duplocloud-uses-infrastructure-as-code-to-stitch-together-devops-lifecycle.md)
+- [DuploCloud KBs](https://docs.duplocloud.com/docs/duplocloud-kbs/duplocloud-kbs.md)
+- [KB 1 Test](https://docs.duplocloud.com/docs/duplocloud-kbs/duplocloud-kbs/kb-1-test.md): This is a test to see if a group and all sub pages are hidden can we still see it from an MCP client
+
+
+---
+
+# Agent Instructions
+This documentation is published with GitBook. GitBook is the documentation platform designed so that both humans and AI agents can read, navigate, and reason over technical content effectively. Learn more at gitbook.com.
+
+## Querying This Documentation
+If you need additional information, you can query the documentation dynamically by asking a question.
+Perform an HTTP GET request on a page URL with the `ask` query parameter:
+```
+GET https://docs.duplocloud.com/docs/introduction/readme.md?ask=<question>
+```
+The question should be specific, self-contained, and written in natural language.
+The response will contain a direct answer to the question and relevant excerpts and sources from the documentation.
+Use this mechanism when the answer is not explicitly present in the current page, you need clarification or additional context, or you want to retrieve related documentation sections.
